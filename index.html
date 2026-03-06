@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SVGN Systems | Drill Protocol — How Long Would You Survive?</title>
     <meta name="description" content="60% of people wouldn't survive 72 hours without power. AI scans your home and tells you exactly how long you'd last. Find out in 60 seconds.">
-    <meta name="keywords" content="survival readiness score, emergency preparedness test, AI home scan, disaster survival quiz, how prepared are you, SVGN Systems, Drill Protocol">
+    <meta name="keywords" content="survival readiness score, emergency preparedness test, AI home scan, disaster survival app, SVGN Systems, Drill Protocol">
     <link rel="canonical" href="https://svgnsystems.com/" />
     
     <script type="application/ld+json">
@@ -15,21 +15,7 @@
       "name": "SVGN Systems",
       "url": "https://svgnsystems.com/",
       "logo": "https://svgnsystems.com/logo_svgn.svg",
-      "description": "AI-powered survival readiness platform. Scans your home, scores your preparedness, trains you with real-world drills."
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Drill Protocol",
-      "applicationCategory": "EducationalApplication",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/PreOrder"
-      }
+      "description": "AI-powered survival readiness platform. Real-time drills that bleed into real life."
     }
     </script>
 
@@ -38,15 +24,11 @@
     <meta property="og:title" content="How Long Would You Survive? | SVGN Systems">
     <meta property="og:description" content="60% of people wouldn't last 72 hours without power. AI scans your home and tells you exactly how long you'd last.">
     <meta property="og:image" content="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?auto=format&fit=crop&q=80&w=1200">
-
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://svgnsystems.com/">
     <meta property="twitter:title" content="How Long Would You Survive? | SVGN Systems">
     <meta property="twitter:description" content="60% of people wouldn't last 72 hours without power. AI scans your home and tells you exactly how long you'd last.">
-    <meta property="twitter:image" content="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?auto=format&fit=crop&q=80&w=1200">
 
     <link rel="icon" href="/logo_svgn.svg">
-
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/alpinejs" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,15 +53,8 @@
             backgroundImage: {
               'hex-pattern': "url('data:image/svg+xml,%3Csvg width=\"24\" height=\"40\" viewBox=\"0 0 24 40\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M0 40c5.523 0 10-4.477 10-10V10c0-5.523 4.477-10 10-10s10 4.477 10 10v20c0 5.523-4.477 10-10 10S0 35.523 0 30v10z\" fill=\"%231a1a1a\" fill-opacity=\"0.05\" fill-rule=\"evenodd\"/%3E%3C/svg%3E')",
             },
-            animation: {
-              'float': 'float 6s ease-in-out infinite',
-            },
-            keyframes: {
-              float: {
-                '0%, 100%': { transform: 'translateY(0)' },
-                '50%': { transform: 'translateY(-10px)' },
-              }
-            }
+            animation: { 'float': 'float 6s ease-in-out infinite' },
+            keyframes: { float: { '0%, 100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-10px)' } } }
           }
         }
       }
@@ -109,8 +84,8 @@
     <div class="fixed top-0 w-full h-6 bg-bunker-panel border-b border-white/5 z-50 flex items-center">
       <div class="marquee-container w-full font-data text-[9px] text-gray-600 tracking-widest pointer-events-none">
         <div class="marquee-content">
-          DRILL.STATUS: STANDBY // AI.VISION: READY // SCAN.MODE: HOME ASSESSMENT // THREAT.LEVEL: VARIABLE // OPERATIVES.ACTIVE: COUNTING // READINESS.AVG: 27/100 // 
-          DRILL.STATUS: STANDBY // AI.VISION: READY // SCAN.MODE: HOME ASSESSMENT // THREAT.LEVEL: VARIABLE // OPERATIVES.ACTIVE: COUNTING // READINESS.AVG: 27/100 //
+          DRILL.STATUS: STANDBY // AI.VISION: READY // SCAN.MODE: HOME ASSESSMENT // THREAT.LEVEL: VARIABLE // READINESS.AVG: 27/100 // 
+          DRILL.STATUS: STANDBY // AI.VISION: READY // SCAN.MODE: HOME ASSESSMENT // THREAT.LEVEL: VARIABLE // READINESS.AVG: 27/100 //
         </div>
       </div>
     </div>
@@ -128,17 +103,15 @@
         </a>
         
         <div class="hidden xl:flex gap-12 font-data text-xs tracking-[0.2em] text-gray-500 items-center">
+          <a href="#drills" class="hover:text-tactical-green transition-colors">DRILLS</a>
           <a href="#how-it-works" class="hover:text-tactical-green transition-colors">HOW IT WORKS</a>
-          <a href="#scenarios" class="hover:text-tactical-green transition-colors">SCENARIOS</a>
           <a href="#waitlist" class="hover:text-tactical-green transition-colors">GET ACCESS</a>
         </div>
 
         <div class="xl:hidden">
-             <button @click="open = !open" class="text-white focus:outline-none p-2">
-                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
-                 </svg>
-             </button>
+          <button @click="open = !open" class="text-white focus:outline-none p-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" /></svg>
+          </button>
         </div>
 
         <a href="#waitlist" class="hidden xl:block relative group overflow-hidden bg-white/5 px-8 py-3 border border-tactical-green/30 hover:border-tactical-green transition-all">
@@ -148,11 +121,11 @@
       </div>
       
       <div x-show="open" x-transition class="xl:hidden bg-bunker-dark border-b border-white/10">
-           <div class="flex flex-col p-6 space-y-4 font-data text-sm tracking-[0.2em] text-gray-400">
-               <a href="#how-it-works" @click="open = false" class="hover:text-tactical-green transition-colors">HOW IT WORKS</a>
-               <a href="#scenarios" @click="open = false" class="hover:text-tactical-green transition-colors">SCENARIOS</a>
-               <a href="#waitlist" @click="open = false" class="text-tactical-green border border-tactical-green/30 p-3 text-center bg-white/5 mt-2">GET EARLY ACCESS</a>
-           </div>
+        <div class="flex flex-col p-6 space-y-4 font-data text-sm tracking-[0.2em] text-gray-400">
+          <a href="#drills" @click="open = false" class="hover:text-tactical-green transition-colors">DRILLS</a>
+          <a href="#how-it-works" @click="open = false" class="hover:text-tactical-green transition-colors">HOW IT WORKS</a>
+          <a href="#waitlist" @click="open = false" class="text-tactical-green border border-tactical-green/30 p-3 text-center bg-white/5 mt-2">GET EARLY ACCESS</a>
+        </div>
       </div>
     </nav>
 
@@ -173,89 +146,129 @@
             HOW LONG<br>WOULD <span class="text-tactical-green">YOU</span><br>SURVIVE?
           </h1>
           
-          <p class="font-ui text-xl md:text-2xl text-gray-400 max-w-xl mb-6 font-light leading-relaxed">
-            AI scans your home. Analyzes your supplies. Tells you <strong class="text-white">exactly how many hours you'd last</strong> without power, water, or help.
-          </p>
-          <p class="font-data text-sm text-gray-600 mb-12">
-            Takes 60 seconds. The result will change how you see your home.
+          <p class="font-ui text-xl md:text-2xl text-gray-400 max-w-xl mb-12 font-light leading-relaxed">
+            AI scans your home. Scores your readiness. Then trains you with <strong class="text-white">real-world drills that bleed into real life.</strong>
           </p>
           
           <div class="flex flex-col sm:flex-row gap-6 mb-12">
             <a href="#waitlist" class="bg-tactical-green text-black px-10 py-5 font-data font-bold text-sm tracking-widest hover:bg-white transition-colors flex items-center justify-center gap-3 text-center">
-              GET MY READINESS SCORE
+              GET EARLY ACCESS
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
             </a>
-            <a href="#how-it-works" class="border border-white/20 text-white px-10 py-5 font-data font-bold text-sm tracking-widest hover:border-tactical-green hover:text-tactical-green transition-colors text-center">
-              HOW IT WORKS
+            <a href="#drills" class="border border-white/20 text-white px-10 py-5 font-data font-bold text-sm tracking-widest hover:border-tactical-green hover:text-tactical-green transition-colors text-center">
+              SEE DRILLS
             </a>
           </div>
         </div>
 
-        <!-- Terminal Mockup -->
+        <!-- Phone Mockup: Quick Scan Result -->
         <div class="relative hidden lg:flex justify-center items-center">
-          <div class="relative w-[340px] bg-black border border-white/10 shadow-2xl overflow-hidden font-data text-sm">
-            <div class="bg-bunker-panel border-b border-white/10 px-4 py-2 flex items-center gap-2">
-              <div class="w-2.5 h-2.5 rounded-full bg-alert-red/80"></div>
-              <div class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></div>
-              <div class="w-2.5 h-2.5 rounded-full bg-tactical-green/80"></div>
-              <span class="text-[10px] text-gray-600 ml-2">DRILL PROTOCOL v0.1</span>
-            </div>
-            <div class="p-5 space-y-3 text-xs leading-relaxed">
-              <div class="text-gray-600">> SCANNING HOME...</div>
-              <div class="text-gray-600">> LOCATION: Tallinn, EE</div>
-              <div class="text-tactical-green">> SCAN COMPLETE.</div>
-              <div class="h-px bg-white/10 my-3"></div>
-              <div class="text-white">YOUR READINESS SCORE</div>
-              <div class="text-tactical-green text-3xl font-bold my-2">23 <span class="text-sm text-gray-500">/ 100</span></div>
-              <div class="w-full bg-white/10 h-2 rounded-full overflow-hidden">
-                <div class="bg-alert-red h-full rounded-full" style="width: 23%"></div>
+          <div class="relative w-[300px] h-[600px] bg-bunker-panel border-4 border-gray-800 rounded-[3rem] shadow-2xl overflow-hidden">
+            <div class="absolute inset-2 bg-black rounded-[2.5rem] overflow-hidden flex flex-col relative">
+              <div class="absolute inset-0 bg-hex-pattern opacity-20"></div>
+              
+              <div class="h-8 bg-bunker-dark flex items-center justify-between px-6 text-[10px] font-data text-gray-500 relative z-10">
+                <span>09:41</span>
+                <span class="flex gap-1"><span>5G</span><span>100%</span></span>
               </div>
-              <div class="text-alert-red mt-3 font-bold">CLASSIFICATION: CRITICAL RISK</div>
-              <div class="h-px bg-white/10 my-3"></div>
-              <div class="text-gray-400">Estimated survival time</div>
-              <div class="text-white">without outside help:</div>
-              <div class="text-alert-red text-2xl font-bold">&lt; 36 HOURS</div>
-              <div class="h-px bg-white/10 my-3"></div>
-              <div class="text-gray-600 text-[10px]">GAPS DETECTED:</div>
-              <div class="text-alert-red text-[11px]">✗ Water: 10 hours (need 72h)</div>
-              <div class="text-alert-red text-[11px]">✗ Medical: cosmetic kit only</div>
-              <div class="text-alert-red text-[11px]">✗ Food: delivery-dependent</div>
-              <div class="text-alert-red text-[11px]">✗ Plan: nonexistent</div>
-              <div class="h-px bg-white/10 my-3"></div>
-              <div class="text-gray-500 text-[10px]">Less prepared than 89% of operatives.</div>
+              
+              <div class="flex-1 p-4 flex flex-col font-data text-xs relative z-10">
+                <div class="text-tactical-green mb-1">SCAN COMPLETE</div>
+                <div class="h-px bg-white/10 my-2"></div>
+                <div class="text-white text-lg font-bold mb-1">READINESS SCORE</div>
+                <div class="text-alert-red text-4xl font-bold my-2">23<span class="text-gray-600 text-sm">/100</span></div>
+                <div class="w-full bg-white/10 h-2 rounded-full overflow-hidden mb-3">
+                  <div class="bg-alert-red h-full rounded-full" style="width: 23%"></div>
+                </div>
+                <div class="text-alert-red text-[10px] font-bold mb-3">CLASSIFICATION: CRITICAL RISK</div>
+                <div class="text-gray-500 text-[10px] mb-1">Survival time without help:</div>
+                <div class="text-alert-red text-xl font-bold mb-3">&lt; 36 HOURS</div>
+                <div class="h-px bg-white/10 my-2"></div>
+                <div class="space-y-1.5 text-[10px] flex-1">
+                  <div class="text-alert-red">✗ Water: 10h (need 72h)</div>
+                  <div class="text-alert-red">✗ Light: phone only</div>
+                  <div class="text-alert-red">✗ Medical: cosmetic kit</div>
+                  <div class="text-alert-red">✗ Food: delivery-dependent</div>
+                  <div class="text-alert-red">✗ Plan: nonexistent</div>
+                </div>
+                <div class="flex gap-2 mt-3">
+                  <button class="flex-1 bg-tactical-green/20 border border-tactical-green/50 text-tactical-green py-2 text-[10px]">SHARE SCORE</button>
+                  <button class="flex-1 bg-white/5 border border-white/20 text-gray-400 py-2 text-[10px]">START DRILL</button>
+                </div>
+              </div>
             </div>
+            <div class="absolute top-2 left-1/2 -translate-x-1/2 w-24 h-6 bg-black rounded-full"></div>
           </div>
           
-          <div class="absolute -right-4 top-16 bg-bunker-panel border border-tactical-green/30 p-3 backdrop-blur-md animate-float">
+          <div class="absolute -right-8 top-20 bg-bunker-panel border border-alert-red/30 p-3 backdrop-blur-md animate-float">
             <div class="font-data text-[10px] text-gray-500">AI VISION</div>
-            <div class="font-data text-xs text-tactical-green">ANALYZING...</div>
-          </div>
-          <div class="absolute -left-4 bottom-24 bg-bunker-panel border border-alert-red/30 p-3 backdrop-blur-md">
-            <div class="font-data text-[10px] text-gray-500">THREAT LEVEL</div>
             <div class="font-data text-xs text-alert-red">CRITICAL</div>
+          </div>
+          <div class="absolute -left-8 bottom-32 bg-bunker-panel border border-tactical-green/30 p-3 backdrop-blur-md">
+            <div class="font-data text-[10px] text-gray-500">OPERATIVES</div>
+            <div class="font-data text-xs text-tactical-green">SCANNING...</div>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- Shocking Stats -->
-    <section class="py-16 bg-bunker-dark border-y border-white/5">
-      <div class="max-w-6xl mx-auto px-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-        <div>
-          <div class="font-data text-3xl md:text-4xl text-alert-red font-bold">60%</div>
-          <div class="font-data text-[10px] text-gray-500 mt-2 tracking-wider">WOULDN'T SURVIVE<br>72 HOURS WITHOUT POWER</div>
+    <!-- Drills -->
+    <section id="drills" class="py-32 bg-bunker-dark border-y border-white/5 relative">
+      <div class="max-w-[1800px] mx-auto px-8">
+        <div class="text-center mb-20">
+          <span class="font-data text-tactical-green tracking-[0.3em] text-xs">DRILL LIBRARY</span>
+          <h2 class="font-luxury text-4xl md:text-5xl text-white mt-4">NOT A QUIZ. AN EXPERIENCE.</h2>
+          <p class="font-ui text-gray-400 mt-4 max-w-2xl mx-auto">Your real home is the game world. AI watches. You move, photograph, decide, prove.</p>
         </div>
-        <div>
-          <div class="font-data text-3xl md:text-4xl text-alert-red font-bold">84%</div>
-          <div class="font-data text-[10px] text-gray-500 mt-2 tracking-wider">HAVE NO<br>EMERGENCY PLAN</div>
-        </div>
-        <div>
-          <div class="font-data text-3xl md:text-4xl text-alert-red font-bold">3 sec</div>
-          <div class="font-data text-[10px] text-gray-500 mt-2 tracking-wider">OF AUDIO TO CLONE<br>ANYONE'S VOICE WITH AI</div>
-        </div>
-        <div>
-          <div class="font-data text-3xl md:text-4xl text-tactical-green font-bold">60 sec</div>
-          <div class="font-data text-[10px] text-gray-500 mt-2 tracking-wider">TO FIND OUT YOUR<br>READINESS SCORE</div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-bunker-panel border border-white/10 p-8 relative group panel-hover overflow-hidden">
+            <div class="hud-corner hud-tl"></div><div class="hud-corner hud-tr"></div>
+            <div class="hud-corner hud-bl"></div><div class="hud-corner hud-br"></div>
+            <div class="text-tactical-green font-data text-xs mb-4">60 SEC // AI SCAN</div>
+            <h3 class="font-luxury text-xl text-white mb-4">READINESS SCORE</h3>
+            <p class="font-ui text-gray-400 text-sm leading-relaxed">Photograph your supplies. AI counts your water, checks your first aid kit, evaluates your food. Tells you exactly how many hours you'd last.</p>
+          </div>
+
+          <div class="bg-bunker-panel border border-white/10 p-8 relative group panel-hover overflow-hidden">
+            <div class="hud-corner hud-tl"></div><div class="hud-corner hud-tr"></div>
+            <div class="hud-corner hud-bl"></div><div class="hud-corner hud-br"></div>
+            <div class="text-alert-red font-data text-xs mb-4">3 MIN // MIND DRILL</div>
+            <h3 class="font-luxury text-xl text-white mb-4">IS THAT REALLY YOUR MOM?</h3>
+            <p class="font-ui text-gray-400 text-sm leading-relaxed">AI clones any voice from 3 seconds of audio. Mom calls crying. Is it her? $25M stolen this way in 2025. Do you have a family code word?</p>
+          </div>
+
+          <div class="bg-bunker-panel border border-white/10 p-8 relative group panel-hover overflow-hidden">
+            <div class="hud-corner hud-tl"></div><div class="hud-corner hud-tr"></div>
+            <div class="hud-corner hud-bl"></div><div class="hud-corner hud-br"></div>
+            <div class="text-tactical-green font-data text-xs mb-4">10 MIN // FLASH DRILL</div>
+            <h3 class="font-luxury text-xl text-white mb-4">GRAB BAG</h3>
+            <p class="font-ui text-gray-400 text-sm leading-relaxed">Chemical spill. Evacuate in 15 minutes. Pack a bag for 48 hours. AI grades your contents. Most people get a D-.</p>
+          </div>
+
+          <div class="bg-bunker-panel border border-white/10 p-8 relative group panel-hover overflow-hidden">
+            <div class="hud-corner hud-tl"></div><div class="hud-corner hud-tr"></div>
+            <div class="hud-corner hud-bl"></div><div class="hud-corner hud-br"></div>
+            <div class="text-alert-red font-data text-xs mb-4">ALL DAY // ARG STORY</div>
+            <h3 class="font-luxury text-xl text-white mb-4">KNOCK KNOCK</h3>
+            <p class="font-ui text-gray-400 text-sm leading-relaxed">Someone is at your door. Go check. Photograph it. AI tells you how fast someone could kick it in. The story develops throughout the day.</p>
+          </div>
+
+          <div class="bg-bunker-panel border border-white/10 p-8 relative group panel-hover overflow-hidden">
+            <div class="hud-corner hud-tl"></div><div class="hud-corner hud-tr"></div>
+            <div class="hud-corner hud-bl"></div><div class="hud-corner hud-br"></div>
+            <div class="text-tactical-green font-data text-xs mb-4">1 HOUR // LIVE EVENT</div>
+            <h3 class="font-luxury text-xl text-white mb-4">BLACKOUT NIGHT</h3>
+            <p class="font-ui text-gray-400 text-sm leading-relaxed">9 PM. All lights off. Tasks in the dark. Hundreds do it simultaneously. 213 quit last time. Will you?</p>
+          </div>
+
+          <div class="bg-bunker-panel border border-white/10 p-8 relative group panel-hover overflow-hidden">
+            <div class="hud-corner hud-tl"></div><div class="hud-corner hud-tr"></div>
+            <div class="hud-corner hud-bl"></div><div class="hud-corner hud-br"></div>
+            <div class="text-alert-red font-data text-xs mb-4">2 MIN // MIND DRILL</div>
+            <h3 class="font-luxury text-xl text-white mb-4">YOUR PHONE IS DEAD</h3>
+            <p class="font-ui text-gray-400 text-sm leading-relaxed">Do you know your mom's number by heart? Can you get to a hospital without Google Maps? You are not a person with a phone. You are a phone with a person.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -264,171 +277,33 @@
     <section id="how-it-works" class="py-32 bg-void relative">
       <div class="max-w-6xl mx-auto px-8">
         <div class="text-center mb-20">
-          <span class="font-data text-tactical-green tracking-[0.3em] text-xs">THREE LAYERS</span>
-          <h2 class="font-luxury text-4xl text-white mt-4">NOT A QUIZ. AN EXPERIENCE.</h2>
-          <p class="font-ui text-gray-400 mt-4 max-w-2xl mx-auto">Drill Protocol doesn't ask you to read. It asks you to move, photograph, decide, and prove. Your real home is the game world.</p>
+          <span class="font-data text-tactical-green tracking-[0.3em] text-xs">PROTOCOL</span>
+          <h2 class="font-luxury text-4xl text-white mt-4">HOW IT WORKS</h2>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
-          <div class="bg-bunker-panel border border-white/10 p-8 relative group panel-hover">
-            <div class="hud-corner hud-tl"></div><div class="hud-corner hud-tr"></div>
-            <div class="hud-corner hud-bl"></div><div class="hud-corner hud-br"></div>
-            <div class="font-data text-tactical-green text-4xl mb-4">01</div>
-            <h3 class="font-luxury text-xl text-white mb-4">QUICK SCAN</h3>
-            <p class="font-data text-xs text-gray-500 mb-4">60 SECONDS</p>
-            <p class="font-ui text-gray-400 text-sm leading-relaxed">
-              AI scans your home through your camera. Counts your water, checks your first aid kit, evaluates your food supply. Gives you a Readiness Score out of 100.
-            </p>
-            <div class="mt-6 font-data text-xs text-gray-600">"I got 23/100. My toilet tank is my backup water supply. Apparently that's a real thing."</div>
-          </div>
-
-          <div class="bg-bunker-panel border border-white/10 p-8 relative group panel-hover">
-            <div class="hud-corner hud-tl"></div><div class="hud-corner hud-tr"></div>
-            <div class="hud-corner hud-bl"></div><div class="hud-corner hud-br"></div>
-            <div class="font-data text-tactical-green text-4xl mb-4">02</div>
-            <h3 class="font-luxury text-xl text-white mb-4">FLASH DRILLS</h3>
-            <p class="font-data text-xs text-gray-500 mb-4">3 — 30 MINUTES</p>
-            <p class="font-ui text-gray-400 text-sm leading-relaxed">
-              Short, intense scenarios that make you think. Pack a survival bag in 10 minutes. Verify if a phone call is really your mom. Navigate home without GPS.
-            </p>
-            <div class="mt-6 font-data text-xs text-gray-600">"The AI voice cloning drill made me set up a family code word. That was genuinely scary."</div>
-          </div>
-
-          <div class="bg-bunker-panel border border-white/10 p-8 relative group panel-hover">
-            <div class="hud-corner hud-tl"></div><div class="hud-corner hud-tr"></div>
-            <div class="hud-corner hud-bl"></div><div class="hud-corner hud-br"></div>
-            <div class="font-data text-tactical-green text-4xl mb-4">03</div>
-            <h3 class="font-luxury text-xl text-white mb-4">ARG STORIES</h3>
-            <p class="font-data text-xs text-gray-500 mb-4">THROUGHOUT THE DAY</p>
-            <p class="font-ui text-gray-400 text-sm leading-relaxed">
-              Full alternate-reality scenarios that bleed into your real life. Notifications arrive like real events. Go to your door. Sit in darkness. Find a dead drop location on your street.
-            </p>
-            <div class="mt-6 font-data text-xs text-gray-600">"847 people did Blackout Night at the same time. 213 quit. I didn't."</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Live Story: Voice Clone -->
-    <section id="scenarios" class="py-32 bg-bunker-dark border-t border-white/5">
-      <div class="max-w-3xl mx-auto px-8">
-        <div class="text-center mb-16">
-          <span class="font-data text-alert-red tracking-[0.3em] text-xs">EXPERIENCE A DRILL</span>
-          <h2 class="font-luxury text-4xl text-white mt-4">IS THAT REALLY YOUR MOM?</h2>
-        </div>
-
-        <div class="bg-black border border-white/10 overflow-hidden">
-          <div class="bg-bunker-panel border-b border-white/10 px-5 py-2 flex items-center gap-2">
-            <div class="w-2 h-2 rounded-full bg-alert-red/80"></div>
-            <div class="w-2 h-2 rounded-full bg-yellow-500/80"></div>
-            <div class="w-2 h-2 rounded-full bg-tactical-green/80"></div>
-            <span class="text-[10px] text-gray-600 font-data ml-2">DRILL PROTOCOL // TRUST PROTOCOL</span>
-          </div>
-          <div class="p-6 md:p-8 font-data text-xs md:text-sm leading-relaxed space-y-4">
-            <div class="text-gray-500">> SCENARIO LOADED.</div>
-            <div class="text-gray-500">> DIFFICULTY: ★★☆</div>
-            <div class="h-px bg-white/10"></div>
-            <div class="text-white leading-relaxed">
-              The grid is down. No internet.<br>
-              Your phone still works on cell.<br><br>
-              You get a call from <span class="text-tactical-green">MOM</span>.<br>
-              She's crying. She says:<br><br>
+          <div class="text-center">
+            <div class="w-20 h-20 mx-auto mb-6 border-2 border-tactical-green/50 rounded-full flex items-center justify-center">
+              <span class="font-luxury text-3xl text-tactical-green">1</span>
             </div>
-            <div class="bg-bunker-panel border-l-2 border-tactical-green/50 p-4 text-white italic">
-              "I'm hurt. I need you to come to 14 Oak Street. Bring money. Don't tell anyone. Hurry."
-            </div>
-            <div class="text-white leading-relaxed">
-              <br>It sounds <strong>exactly</strong> like her.<br>
-              Her voice. Her way of talking.<br>
-              She's scared. You're scared.<br><br>
-              But here's what you don't know:
-            </div>
-            <div class="h-px bg-white/10"></div>
-            <div class="text-alert-red leading-relaxed">
-              In 2025, AI can clone any voice from a <strong class="text-white">3-second</strong> sample.<br>
-              Your mom's voicemail greeting is all they need.<br><br>
-              That might not be your mom.<br>
-              $25 million was stolen this way in 2025.
-            </div>
-            <div class="h-px bg-white/10"></div>
-            <div class="text-gray-500">> WHAT DO YOU DO?</div>
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
-              <div class="border border-white/20 bg-white/5 p-3 text-center text-gray-400 cursor-default">📞 GO IMMEDIATELY</div>
-              <div class="border border-white/20 bg-white/5 p-3 text-center text-gray-400 cursor-default">🤔 ASK A QUESTION</div>
-              <div class="border border-white/20 bg-white/5 p-3 text-center text-gray-400 cursor-default">📵 HANG UP & VERIFY</div>
-            </div>
-            <div class="text-gray-600 text-[10px] text-center pt-2">INTERACTIVE CHOICES AVAILABLE IN THE APP</div>
-          </div>
-        </div>
-
-        <div class="mt-6 bg-bunker-panel border border-tactical-green/20 p-6 font-data text-xs text-gray-400 leading-relaxed">
-          <span class="text-tactical-green">LESSON:</span> You need a <strong class="text-white">family code word</strong>. A secret word only your real family knows. If they can't say it, it's not them. Takes 30 seconds to set up. Could save your life.
-        </div>
-      </div>
-    </section>
-
-    <!-- The Question That Hurts -->
-    <section class="py-32 bg-void border-t border-white/5">
-      <div class="max-w-4xl mx-auto px-8">
-        <div class="text-center mb-16">
-          <span class="font-data text-alert-red tracking-[0.3em] text-xs">HONEST QUESTION</span>
-          <h2 class="font-luxury text-3xl md:text-5xl text-white mt-4">DO YOU KNOW YOUR<br>MOM'S PHONE NUMBER<br><span class="text-alert-red">BY HEART?</span></h2>
-        </div>
-        
-        <div class="max-w-2xl mx-auto space-y-6 font-data text-sm">
-          <div class="bg-bunker-panel border border-white/10 p-6">
-            <div class="text-gray-500 mb-3">> YOUR PHONE JUST DIED. POWER IS OUT EVERYWHERE.</div>
-            <div class="text-white leading-relaxed">
-              Without your phone, you cannot:
-            </div>
-            <div class="mt-4 space-y-2">
-              <div class="text-alert-red">✗ Contact your family</div>
-              <div class="text-alert-red">✗ Navigate anywhere</div>
-              <div class="text-alert-red">✗ Access any account</div>
-              <div class="text-alert-red">✗ Prove your identity</div>
-              <div class="text-alert-red">✗ Pay for anything</div>
-            </div>
-            <div class="h-px bg-white/10 my-4"></div>
-            <div class="text-gray-400 leading-relaxed">
-              Your entire life exists inside a glass rectangle that breaks when dropped from 1 meter.
-            </div>
-            <div class="mt-4 text-white font-bold">You are not a person with a phone. You are a phone with a person.</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- More Drills Preview -->
-    <section class="py-32 bg-bunker-dark border-t border-white/5">
-      <div class="max-w-[1800px] mx-auto px-8">
-        <div class="text-center mb-16">
-          <span class="font-data text-tactical-green tracking-[0.3em] text-xs">COMING SOON</span>
-          <h2 class="font-luxury text-4xl text-white mt-4">MORE DRILLS. MORE TRUTH.</h2>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="bg-bunker-panel border border-white/10 p-6 hover:border-tactical-green/30 transition-colors">
-            <div class="font-data text-xs text-tactical-green mb-3">10 MIN</div>
-            <h3 class="font-luxury text-lg text-white mb-2">GRAB BAG</h3>
-            <p class="font-ui text-gray-500 text-sm">Chemical spill. Evacuate now. Pack a bag for 48 hours. AI grades what you packed.</p>
+            <h3 class="font-luxury text-xl text-white mb-4">AI SCANS YOUR HOME</h3>
+            <p class="font-ui text-gray-400 text-sm">Point your camera at your supplies. AI counts water bottles, checks first aid kits, evaluates food. 60 seconds to your Readiness Score.</p>
           </div>
 
-          <div class="bg-bunker-panel border border-white/10 p-6 hover:border-alert-red/30 transition-colors">
-            <div class="font-data text-xs text-alert-red mb-3">ALL DAY</div>
-            <h3 class="font-luxury text-lg text-white mb-2">KNOCK KNOCK</h3>
-            <p class="font-ui text-gray-500 text-sm">Someone is at your door. Go check. Photograph it. AI tells you how fast someone could kick it in.</p>
+          <div class="text-center">
+            <div class="w-20 h-20 mx-auto mb-6 border-2 border-tactical-green/50 rounded-full flex items-center justify-center">
+              <span class="font-luxury text-3xl text-tactical-green">2</span>
+            </div>
+            <h3 class="font-luxury text-xl text-white mb-4">DRILLS HIT YOUR PHONE</h3>
+            <p class="font-ui text-gray-400 text-sm">Notifications arrive like real events. Go to your door. Pack a bag. Sit in darkness. Each drill teaches you something you didn't know you needed.</p>
           </div>
 
-          <div class="bg-bunker-panel border border-white/10 p-6 hover:border-tactical-green/30 transition-colors">
-            <div class="font-data text-xs text-tactical-green mb-3">1 HOUR</div>
-            <h3 class="font-luxury text-lg text-white mb-2">BLACKOUT NIGHT</h3>
-            <p class="font-ui text-gray-500 text-sm">9 PM. All lights off. Tasks in the dark. Hundreds do it simultaneously. 213 quit last time.</p>
-          </div>
-
-          <div class="bg-bunker-panel border border-white/10 p-6 hover:border-alert-red/30 transition-colors">
-            <div class="font-data text-xs text-alert-red mb-3">5 MIN</div>
-            <h3 class="font-luxury text-lg text-white mb-2">3 AM</h3>
-            <p class="font-ui text-gray-500 text-sm">Glass breaks downstairs. Someone is in your home. You have 45 seconds. 70% of people freeze.</p>
+          <div class="text-center">
+            <div class="w-20 h-20 mx-auto mb-6 border-2 border-tactical-green/50 rounded-full flex items-center justify-center">
+              <span class="font-luxury text-3xl text-tactical-green">3</span>
+            </div>
+            <h3 class="font-luxury text-xl text-white mb-4">CHALLENGE FRIENDS</h3>
+            <p class="font-ui text-gray-400 text-sm">Share your score. Dare your friends to beat it. See who's more prepared. Spoiler: you're both going to die in the same disaster.</p>
           </div>
         </div>
       </div>
@@ -440,7 +315,7 @@
         <div class="text-center mb-12">
           <span class="font-data text-tactical-green tracking-[0.3em] text-xs">EARLY ACCESS</span>
           <h2 class="font-luxury text-4xl text-white mt-4">BE FIRST TO GET SCANNED</h2>
-          <p class="font-ui text-gray-400 mt-4">Join the waitlist. When Drill Protocol launches, you'll be the first to know your Readiness Score.</p>
+          <p class="font-ui text-gray-400 mt-4">Drill Protocol is coming. Get notified when scanning begins.</p>
         </div>
 
         <div class="bg-bunker-panel border border-tactical-green/30 p-8 md:p-12 relative">
@@ -479,7 +354,7 @@
         <div class="col-span-2">
           <span class="font-luxury font-bold text-white text-2xl">SVGN<span class="text-tactical-green">SYSTEMS</span></span>
           <p class="font-data text-xs text-gray-500 mt-4 max-w-md leading-relaxed">
-             AI-powered survival readiness platform. Scans your home, scores your preparedness, trains you with real-world drills that bleed into real life.
+             AI-powered survival readiness platform. Real-time drills that bleed into real life.
           </p>
         </div>
         <div>
@@ -504,35 +379,25 @@
             const msg = document.getElementById('success-message');
             const form = this;
             const originalBtnText = btn.innerHTML;
-            
             btn.innerHTML = "TRANSMITTING...";
             btn.classList.add('opacity-50', 'cursor-not-allowed');
-            
             const formData = new FormData(form);
-
             fetch("https://formspree.io/f/xanzazbd", {
                 method: "POST",
                 body: formData,
                 headers: { 'Accept': 'application/json' }
             }).then(response => {
                 if (response.ok) {
-                    setTimeout(() => {
-                        form.classList.add('hidden');
-                        msg.classList.remove('hidden');
-                    }, 1000);
+                    setTimeout(() => { form.classList.add('hidden'); msg.classList.remove('hidden'); }, 1000);
                 } else {
                     response.json().then(data => {
-                        if (Object.hasOwn(data, 'errors')) {
-                            alert(data["errors"].map(error => error["message"]).join(", "));
-                        } else {
-                            alert("Error: Transmission failed. Try again.");
-                        }
+                        alert(Object.hasOwn(data, 'errors') ? data["errors"].map(e => e["message"]).join(", ") : "Transmission failed.");
                         btn.innerHTML = originalBtnText;
                         btn.classList.remove('opacity-50', 'cursor-not-allowed');
                     });
                 }
-            }).catch(error => {
-                alert("Connection Error: Could not reach command center.");
+            }).catch(() => {
+                alert("Connection error.");
                 btn.innerHTML = originalBtnText;
                 btn.classList.remove('opacity-50', 'cursor-not-allowed');
             });
