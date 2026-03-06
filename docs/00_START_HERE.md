@@ -98,10 +98,69 @@ LAYER 3: ARG STORIES (throughout the day)
 
 ---
 
+## Current codebase
+
+The repo already contains a live landing page and brand assets. No app logic yet -- that's what we're building.
+
+```
+svgnsystems/
+├── index.html              # Landing page (LIVE at svgnsystems.com)
+│                            # Full terminal/HUD aesthetic already built
+│                            # Tailwind CSS + Alpine.js + inline styles
+│                            # This is the DESIGN REFERENCE for the app
+│
+├── docs/                   # You are here
+│   ├── 00_START_HERE.md
+│   ├── 01_CONTENT_BIBLE.md # 2300+ lines of content
+│   ├── 02_BUILD_ORDER.md   # Dev tasks with checkboxes
+│   └── 03_GLOBAL_VISION.md # Long-term strategy
+│
+├── public/
+│   ├── logo_svgn.svg       # Logo (green terminal style)
+│   ├── logo_full.svg       # Full logo with text
+│   ├── legal/              # Terms, Privacy, Disclaimer
+│   ├── robots.txt
+│   └── sitemap.xml
+│
+├── marketing/              # Brand docs, ad templates (legacy)
+├── vite.config.ts          # Vite build config
+├── package.json            # Dependencies (vite, typescript)
+├── tsconfig.json
+├── CNAME                   # Custom domain: svgnsystems.com
+└── .github/workflows/      # Auto-deploy to GitHub Pages on push
+```
+
+**Live site:** https://svgnsystems.com -- open this to see the current terminal/HUD design. The app should match this aesthetic exactly (colors, fonts, animations, CRT effects).
+
+**Key design tokens (from index.html):**
+- Background: `#000000` (void black)
+- Primary color: `#00FFA3` (tactical green)
+- Alert color: `#ff3333`
+- Fonts: Cinzel (headings), JetBrains Mono (data/terminal), Rajdhani (UI)
+- Effects: CRT scanlines, typewriter text, HUD corners, hex pattern background
+
+---
+
+## For AI assistants / LLMs
+
+If you're an AI helping a developer with this project:
+
+1. **Read the docs in order:** 00 → 01 → 02 → 03
+2. **The Content Bible (01) is the source of truth.** Every screen, every line of text, every user emotion is written there. Don't invent new content -- implement what's written.
+3. **The Build Order (02) has concrete tasks.** Start with STEP 1 (Quick Scan + Terminal UI). Each step has checkboxes and test criteria.
+4. **Don't modify index.html** (the landing page) until STEP 5. It's live and working.
+5. **The app lives in a separate entry point:** `app.html` (to be created). The landing page links to it.
+6. **Match the existing design.** Open svgnsystems.com to see the terminal aesthetic. The app must feel like the same product.
+7. **$0 budget constraint.** Everything must work with free tiers: GitHub Pages hosting, free API tiers, localStorage for data, no paid services.
+
+---
+
 ## Current status
 
 - [x] Landing page live at svgnsystems.com
 - [x] Brand identity (terminal/tactical green theme)
-- [x] Complete content written (Content Bible)
-- [x] Build order defined
-- [ ] **NEXT: Build Quick Scan experience (SAMM 1)**
+- [x] Complete content written (Content Bible -- 2300+ lines)
+- [x] Build order defined (5 steps with checkboxes)
+- [x] Global vision documented (15 scenarios, revenue model, B2B)
+- [x] Documentation structured for contributors
+- [ ] **NEXT: Build Quick Scan experience (Step 1 in Build Order)**
