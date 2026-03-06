@@ -1,11 +1,10 @@
-# Sovereign OS by SVGN Systems
+# Drill Protocol by SVGN Systems
 
-The ultimate $25,000+ bio-integrated survival intelligence system. Custom-trained on your DNA, psychology, and estate blueprints.
+Real-time survival training simulation. Practice emergency scenarios with your family before they happen.
 
 ## Development
 
 1. Install dependencies:
    `npm install`
-2. Set the `GEMINI_API_KEY` in .env if needed.
-3. Run the app:
+2. Run the app:
    `npm run dev`

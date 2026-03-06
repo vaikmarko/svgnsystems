@@ -3,12 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SVGN Systems | Sovereign OS</title>
-    <meta name="description" content="The world's first fully independent AI, customized to your health, family, and property. Protect your loved ones even when the internet, power grid, or government services fail.">
-    <meta name="keywords" content="survival AI, off-grid technology, bunker technology, sovereign OS, survival intelligence, doomsday prep AI, autonomous security, personalized survival">
+    <title>SVGN Systems | Drill Protocol — Real-Time Survival Training</title>
+    <meta name="description" content="The world's first AI-powered real-time survival simulation. Practice emergency scenarios with your family before they happen. Train before it matters.">
+    <meta name="keywords" content="survival training app, emergency drill simulation, family survival training, disaster preparedness app, real-time survival simulation, SVGN Systems">
     <link rel="canonical" href="https://svgnsystems.com/" />
     
-    <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -16,7 +15,7 @@
       "name": "SVGN Systems",
       "url": "https://svgnsystems.com/",
       "logo": "https://svgnsystems.com/logo_svgn.svg",
-      "description": "Advanced survival intelligence and autonomous security systems for high-net-worth individuals.",
+      "description": "Real-time survival training technology. Practice emergency scenarios before they happen.",
       "sameAs": [
         "https://twitter.com/svgnsystems"
       ],
@@ -30,18 +29,15 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "Sovereign OS",
-      "description": "Bio-integrated survival AI that functions completely offline.",
-      "brand": {
-        "@type": "Brand",
-        "name": "SVGN Systems"
-      },
+      "@type": "SoftwareApplication",
+      "name": "Drill Protocol",
+      "operatingSystem": "iOS, Android",
+      "applicationCategory": "EducationalApplication",
       "offers": {
         "@type": "Offer",
-        "price": "25000",
+        "price": "0",
         "priceCurrency": "USD",
-        "availability": "https://schema.org/LimitedAvailability"
+        "availability": "https://schema.org/PreOrder"
       }
     }
     </script>
@@ -49,18 +45,18 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://svgnsystems.com/">
-    <meta property="og:title" content="SVGN Systems | Sovereign OS">
-    <meta property="og:description" content="When the system fails, you become the system. The ultimate $25,000 personalized survival intelligence.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200">
+    <meta property="og:title" content="SVGN Systems | Drill Protocol — Real-Time Survival Training">
+    <meta property="og:description" content="The world's first AI-powered survival simulation that runs in real time. Train before it matters.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?auto=format&fit=crop&q=80&w=1200">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://svgnsystems.com/">
-    <meta property="twitter:title" content="SVGN Systems | Sovereign OS">
-    <meta property="twitter:description" content="When the system fails, you become the system. The ultimate $25,000 personalized survival intelligence.">
-    <meta property="twitter:image" content="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200">
+    <meta property="twitter:title" content="SVGN Systems | Drill Protocol — Real-Time Survival Training">
+    <meta property="twitter:description" content="The world's first AI-powered survival simulation that runs in real time. Train before it matters.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?auto=format&fit=crop&q=80&w=1200">
 
-    <!-- Favicon (Inline SVG) -->
+    <!-- Favicon -->
     <link rel="icon" href="/logo_svgn.svg">
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -114,7 +110,7 @@
     </script>
     <style>
       html {
-        scroll-padding-top: 120px; /* Ensures sticky header doesn't cover content */
+        scroll-padding-top: 120px;
         scroll-behavior: smooth;
       }
       body {
@@ -123,12 +119,11 @@
         overflow-x: hidden;
       }
       
-      /* Advanced UI Elements */
       .hud-corner {
         position: absolute;
         width: 20px;
         height: 20px;
-        border-color: #C6A87C;
+        border-color: #00FFA3;
         border-style: solid;
         transition: all 0.3s ease;
       }
@@ -140,12 +135,12 @@
       .panel-hover:hover .hud-corner {
         width: 100%;
         height: 100%;
-        border-color: #C6A87C;
-        background: rgba(198, 168, 124, 0.02);
+        border-color: #00FFA3;
+        background: rgba(0, 255, 163, 0.02);
       }
 
-      .text-glow {
-        text-shadow: 0 0 20px rgba(198, 168, 124, 0.3);
+      .text-glow-green {
+        text-shadow: 0 0 20px rgba(0, 255, 163, 0.3);
       }
       
       .crt-overlay {
@@ -166,7 +161,6 @@
         100% { transform: translateX(-50%); }
       }
       
-      /* Custom Scrollbar */
       ::-webkit-scrollbar {
         width: 6px;
       }
@@ -177,18 +171,18 @@
         background: #333; 
       }
       ::-webkit-scrollbar-thumb:hover {
-        background: #C6A87C; 
+        background: #00FFA3; 
       }
     </style>
 </head>
-  <body class="font-ui selection:bg-gold-primary selection:text-black crt-overlay">
+  <body class="font-ui selection:bg-tactical-green selection:text-black crt-overlay">
     
     <!-- Scrolling Data Header -->
     <div class="fixed top-0 w-full h-6 bg-bunker-panel border-b border-white/5 z-50 flex items-center">
       <div class="marquee-container w-full font-data text-[9px] text-gray-600 tracking-widest pointer-events-none">
         <div class="marquee-content">
-          SYS.STATUS: ONLINE // ENCRYPTION: MILITARY-GRADE // RESPONSE: INSTANT // FINGERPRINT LOCK: ACTIVE // SATELLITE: DISCONNECTED // OFFLINE MODE: CONFIRMED // POWER: 100% // DEPLOYMENT: GLOBAL // SECURITY LEVEL: 5 // DNA ANALYZER: READY // PSYCH-PROFILE: REQUIRED // 
-          SYS.STATUS: ONLINE // ENCRYPTION: MILITARY-GRADE // RESPONSE: INSTANT // FINGERPRINT LOCK: ACTIVE // SATELLITE: DISCONNECTED // OFFLINE MODE: CONFIRMED // POWER: 100% // DEPLOYMENT: GLOBAL // SECURITY LEVEL: 5 // DNA ANALYZER: READY // PSYCH-PROFILE: REQUIRED //
+          DRILL.STATUS: READY // MODE: SIMULATION // SCENARIOS: 847 // DIFFICULTY: VARIABLE // DURATION: 1H-72H // FAMILY MODE: ENABLED // LEADERBOARD: GLOBAL // AI GUIDE: ACTIVE // 
+          DRILL.STATUS: READY // MODE: SIMULATION // SCENARIOS: 847 // DIFFICULTY: VARIABLE // DURATION: 1H-72H // FAMILY MODE: ENABLED // LEADERBOARD: GLOBAL // AI GUIDE: ACTIVE //
         </div>
       </div>
     </div>
@@ -196,44 +190,22 @@
     <!-- Main Navigation -->
     <nav class="fixed top-6 w-full z-40 bg-void/90 backdrop-blur-xl border-b border-white/10 pointer-events-auto" x-data="{ open: false }">
       <div class="max-w-[1800px] mx-auto px-8 h-24 flex items-center justify-between">
-        <div class="flex items-center gap-4">
+        <a href="/" class="flex items-center gap-4">
           <div class="w-12 h-12 relative flex items-center justify-center">
              <img src="/logo_svgn.svg" alt="SVGN Logo" class="w-full h-full object-contain">
           </div>
           <div>
-            <div class="font-luxury font-black text-2xl tracking-[0.2em] text-white leading-none">SVGN<span class="text-gold-primary">SYSTEMS</span></div>
-            <div class="font-data text-[0.6rem] text-gold-dim tracking-[0.4em] mt-1">SOVEREIGN OS</div>
+            <div class="font-luxury font-black text-2xl tracking-[0.2em] text-white leading-none">SVGN<span class="text-tactical-green">SYSTEMS</span></div>
+            <div class="font-data text-[0.6rem] text-tactical-green/60 tracking-[0.4em] mt-1">DRILL PROTOCOL</div>
           </div>
-        </div>
+        </a>
         
         <!-- Desktop Menu -->
         <div class="hidden xl:flex gap-12 font-data text-xs tracking-[0.2em] text-gray-500 items-center">
-          <!-- Products Dropdown -->
-          <div class="relative" x-data="{ prodOpen: false }">
-            <button @click="prodOpen = !prodOpen" class="flex items-center gap-2 px-4 py-2 text-white border border-white/10 bg-white/5 hover:bg-white/10 hover:border-gold-primary hover:text-gold-primary transition-all">
-              PRODUCTS
-              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-              </svg>
-            </button>
-            <div x-show="prodOpen" @click.away="prodOpen = false" x-transition
-                 class="absolute top-full left-0 mt-4 w-72 bg-bunker-panel border border-white/10 z-50">
-              <a href="/" class="block px-5 py-4 hover:bg-white/5 border-b border-white/5">
-                <span class="text-gold-primary font-bold">SOVEREIGN OS</span>
-                <span class="block text-[10px] text-gray-500 mt-1">Bio-integrated survival AI — $25,000</span>
-              </a>
-              <a href="/drill-protocol.html" class="block px-5 py-4 hover:bg-white/5 border-b border-white/5">
-                <span class="text-tactical-green font-bold">DRILL PROTOCOL</span>
-                <span class="block text-[10px] text-gray-500 mt-1">Real-time survival training app</span>
-              </a>
-              <a href="/sentinel-grid.html" class="block px-5 py-4 hover:bg-white/5">
-                <span class="text-alert-red font-bold">SENTINEL GRID</span>
-                <span class="block text-[10px] text-gray-500 mt-1">Autonomous perimeter defense</span>
-              </a>
-            </div>
-          </div>
-          <a href="#philosophy" class="hover:text-gold-primary transition-colors">PHILOSOPHY</a>
-          <a href="#protocol" class="hover:text-gold-primary transition-colors">GET STARTED</a>
+          <a href="#features" class="hover:text-tactical-green transition-colors">FEATURES</a>
+          <a href="#how-it-works" class="hover:text-tactical-green transition-colors">HOW IT WORKS</a>
+          <a href="#pricing" class="hover:text-tactical-green transition-colors">PRICING</a>
+          <a href="#waitlist" class="hover:text-tactical-green transition-colors">JOIN WAITLIST</a>
         </div>
 
         <!-- Mobile Menu Button -->
@@ -245,9 +217,9 @@
              </button>
         </div>
 
-        <a href="#application" class="hidden xl:block relative group overflow-hidden bg-white/5 px-8 py-3 border border-gold-primary/30 hover:border-gold-primary transition-all">
-          <span class="font-data text-xs text-gold-primary tracking-[0.2em] group-hover:text-white relative z-10">START APPLICATION</span>
-          <div class="absolute inset-0 bg-gold-primary transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 ease-out"></div>
+        <a href="#waitlist" class="hidden xl:block relative group overflow-hidden bg-white/5 px-8 py-3 border border-tactical-green/30 hover:border-tactical-green transition-all">
+          <span class="font-data text-xs text-tactical-green tracking-[0.2em] group-hover:text-white relative z-10">JOIN WAITLIST</span>
+          <div class="absolute inset-0 bg-tactical-green transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 ease-out"></div>
         </a>
       </div>
       
@@ -261,612 +233,443 @@
            x-transition:leave-end="opacity-0 -translate-y-2"
            class="xl:hidden bg-bunker-dark border-b border-white/10">
            <div class="flex flex-col p-6 space-y-4 font-data text-sm tracking-[0.2em] text-gray-400">
-               <!-- PRODUCTS Section -->
-               <div class="border-b border-white/10 pb-4 mb-2">
-                 <span class="text-[10px] text-gray-600 mb-3 block">PRODUCTS</span>
-                 <a href="/" @click="open = false" class="block py-2 text-gold-primary hover:text-white transition-colors">SOVEREIGN OS</a>
-                 <a href="/drill-protocol.html" @click="open = false" class="block py-2 text-tactical-green hover:text-white transition-colors">DRILL PROTOCOL</a>
-                 <a href="/sentinel-grid.html" @click="open = false" class="block py-2 text-alert-red hover:text-white transition-colors">SENTINEL GRID</a>
-               </div>
-               <!-- Page Links -->
-               <a href="#philosophy" @click="open = false" class="hover:text-gold-primary transition-colors">PHILOSOPHY</a>
-               <a href="#protocol" @click="open = false" class="hover:text-gold-primary transition-colors">GET STARTED</a>
-               <a href="#application" @click="open = false" class="text-gold-primary border border-gold-primary/30 p-3 text-center bg-white/5 mt-2">START APPLICATION</a>
+               <a href="#features" @click="open = false" class="hover:text-tactical-green transition-colors">FEATURES</a>
+               <a href="#how-it-works" @click="open = false" class="hover:text-tactical-green transition-colors">HOW IT WORKS</a>
+               <a href="#pricing" @click="open = false" class="hover:text-tactical-green transition-colors">PRICING</a>
+               <a href="#waitlist" @click="open = false" class="text-tactical-green border border-tactical-green/30 p-3 text-center bg-white/5 mt-2">JOIN WAITLIST</a>
            </div>
       </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="relative min-h-[130vh] flex items-center pt-32 pb-20 overflow-hidden bg-void">
+    <header class="relative min-h-screen flex items-center pt-32 pb-24 overflow-hidden bg-void">
       <div class="absolute inset-0 bg-hex-pattern opacity-20"></div>
       
-      <!-- Animated Radar Background -->
-      <div class="absolute right-[-10%] top-[20%] w-[800px] h-[800px] border border-white/5 rounded-full opacity-20 animate-[spin_60s_linear_infinite]"></div>
-      <div class="absolute right-[-10%] top-[20%] w-[600px] h-[600px] border border-white/5 rounded-full opacity-20 animate-[spin_40s_linear_reverse_infinite]"></div>
+      <!-- Animated Background Elements -->
+      <div class="absolute right-[-10%] top-[20%] w-[600px] h-[600px] border border-tactical-green/10 rounded-full opacity-30 animate-[spin_60s_linear_infinite]"></div>
+      <div class="absolute right-[-5%] top-[25%] w-[400px] h-[400px] border border-tactical-green/10 rounded-full opacity-20 animate-[spin_40s_linear_reverse_infinite]"></div>
       
-      <div class="max-w-[1800px] mx-auto px-8 relative z-10 w-full grid lg:grid-cols-12 gap-12">
+      <div class="max-w-[1800px] mx-auto px-8 relative z-10 w-full grid lg:grid-cols-2 gap-12 items-center">
         <!-- Text Content -->
-        <div class="lg:col-span-7 flex flex-col justify-center">
-          <div class="inline-flex items-center gap-3 border border-white/10 bg-white/5 px-4 py-2 w-fit mb-8 backdrop-blur-sm">
-            <span class="w-2 h-2 bg-gold-primary animate-pulse"></span>
-            <span class="font-data text-xs text-gray-300 tracking-widest">INVESTMENT THAT DOESN'T DEPEND ON MARKETS</span>
+        <div class="flex flex-col justify-center">
+          <div class="inline-flex items-center gap-3 border border-tactical-green/30 bg-tactical-green/5 px-4 py-2 w-fit mb-8 backdrop-blur-sm">
+            <span class="w-2 h-2 bg-tactical-green animate-pulse"></span>
+            <span class="font-data text-xs text-tactical-green tracking-widest">COMING SOON — iOS & ANDROID</span>
           </div>
           
-          <h1 class="font-luxury text-5xl md:text-7xl xl:text-8xl font-bold text-white leading-[0.9] mb-8 text-glow">
-            WHEN THE<br>SYSTEM FAILS,<br>
-            <span class="text-gold-primary">YOU BECOME<br>THE SYSTEM.</span>
+          <h1 class="font-luxury text-5xl md:text-6xl xl:text-7xl font-bold text-white leading-[0.9] mb-8 text-glow-green">
+            TRAIN<br>BEFORE IT<br>
+            <span class="text-tactical-green">MATTERS.</span>
           </h1>
           
-          <p class="font-ui text-xl md:text-2xl text-gray-400 max-w-2xl mb-12 font-light leading-relaxed">
-            Wealth protects you today. This protects you tomorrow. <br>
-            The world's first <strong>fully independent AI</strong>, customized to your health, family, and property. Protect your loved ones even when the internet, power grid, or government services fail.
+          <p class="font-ui text-xl md:text-2xl text-gray-400 max-w-xl mb-12 font-light leading-relaxed">
+            The world's first <strong class="text-white">real-time survival simulation</strong> that runs for hours or days. Practice emergency scenarios with your family before they happen.
           </p>
           
           <div class="flex flex-col sm:flex-row gap-6 mb-12">
-            <a href="#application" class="bg-gold-primary text-black px-10 py-5 font-data font-bold text-sm tracking-widest hover:bg-white transition-colors flex items-center justify-center gap-3 text-center">
-              GET YOURS ($25,000)
+            <a href="#waitlist" class="bg-tactical-green text-black px-10 py-5 font-data font-bold text-sm tracking-widest hover:bg-white transition-colors flex items-center justify-center gap-3 text-center">
+              JOIN EARLY ACCESS
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
             </a>
-            <a href="#philosophy" class="border border-white/20 text-white px-10 py-5 font-data font-bold text-sm tracking-widest hover:border-gold-primary hover:text-gold-primary transition-colors text-center">
-              WHY YOU NEED THIS
+            <a href="#features" class="border border-white/20 text-white px-10 py-5 font-data font-bold text-sm tracking-widest hover:border-tactical-green hover:text-tactical-green transition-colors text-center">
+              SEE FEATURES
             </a>
           </div>
         </div>
 
-        <!-- Hero Visual / HUD -->
-        <div class="lg:col-span-5 relative h-[600px] hidden lg:block">
-           <div class="absolute inset-0 border border-white/10 bg-bunker-panel/50 backdrop-blur-sm p-8 flex flex-col justify-between">
-              <!-- HUD Top -->
-              <div class="flex justify-between border-b border-white/10 pb-4">
-                <div class="font-data text-xs text-gold-primary">
-                  TARGET: SUBJECT ALPHA<br>
-                  GENOME: ANALYZED
-                </div>
-                <div class="text-right font-data text-xs text-hologram-cyan animate-pulse">
-                  CONNECTION: SECURE
-                </div>
+          <!-- Phone Mockup -->
+        <div class="relative hidden lg:flex justify-center items-center">
+          <div class="relative w-[300px] h-[600px] bg-bunker-panel border-4 border-gray-800 rounded-[3rem] shadow-2xl overflow-hidden">
+            <!-- Phone Screen -->
+            <div class="absolute inset-2 bg-black rounded-[2.5rem] overflow-hidden flex flex-col relative">
+              <div class="absolute inset-0 bg-hex-pattern opacity-20"></div>
+              
+              <!-- Status Bar -->
+              <div class="h-8 bg-bunker-dark flex items-center justify-between px-6 text-[10px] font-data text-gray-500 relative z-10">
+                <span>09:41</span>
+                <span class="flex gap-1">
+                  <span>5G</span>
+                  <span>100%</span>
+                </span>
               </div>
               
-              <!-- Center Graphic -->
-              <div class="relative flex-1 flex items-center justify-center">
-                <div class="w-64 h-64 border border-gold-primary/30 rounded-full flex items-center justify-center relative animate-float">
-                   <!-- Inner rings -->
-                   <div class="absolute inset-4 border border-white/10 rounded-full border-dashed animate-spin-slow"></div>
-                   <div class="absolute inset-12 border border-white/10 rounded-full"></div>
-                   
-                   <!-- DNA Icon Representation -->
-                   <div class="flex gap-1 h-32 items-center">
-                     <div class="w-1 bg-gold-primary h-full opacity-20"></div>
-                     <div class="w-1 bg-gold-primary h-[80%] opacity-40"></div>
-                     <div class="w-1 bg-gold-primary h-[60%] opacity-60"></div>
-                     <div class="w-1 bg-gold-primary h-[40%] opacity-80"></div>
-                     <div class="w-1 bg-gold-primary h-[20%] opacity-100"></div>
-                   </div>
+              <!-- App Content -->
+              <div class="flex-1 p-4 flex flex-col">
+                <div class="text-tactical-green font-data text-xs mb-2">ACTIVE DRILL</div>
+                <div class="text-white font-luxury text-lg mb-4">WINTER BLACKOUT</div>
+                
+                <!-- Timer -->
+                <div class="bg-bunker-panel border border-tactical-green/30 p-4 rounded mb-4">
+                  <div class="text-gray-500 font-data text-[10px] mb-1">TIME REMAINING</div>
+                  <div class="text-tactical-green font-data text-3xl animate-pulse">23:45:12</div>
                 </div>
                 
-                <!-- Data Points around graphic -->
-                <div class="absolute top-1/4 left-0 font-data text-[10px] text-gray-500">
-                  [MEDICATION ANALYSIS]<br>
-                  DRUG SENSITIVITY: HIGH<br>
-                  ADJUST DOSAGE: -20%
-                </div>
-                <div class="absolute bottom-1/4 right-0 font-data text-[10px] text-gray-500 text-right">
-                  [STRESS PROFILE]<br>
-                  STRESS RESPONSE: HIGH<br>
-                  MODE: CALMING
+                <!-- Current Task -->
+                <div class="bg-bunker-panel border border-white/10 p-4 rounded flex-1">
+                  <div class="text-alert-red font-data text-[10px] mb-2">⚠ CURRENT OBJECTIVE</div>
+                  <div class="text-white font-ui text-sm mb-3">Power has failed. Temperature dropping. Gather family in warmest room within 10 minutes.</div>
+                  <div class="flex gap-2">
+                    <button class="flex-1 bg-tactical-green/20 border border-tactical-green/50 text-tactical-green py-2 text-xs font-data">COMPLETE</button>
+                    <button class="flex-1 bg-white/5 border border-white/20 text-gray-400 py-2 text-xs font-data">NEED HELP</button>
+                  </div>
                 </div>
               </div>
-
-              <!-- HUD Bottom -->
-              <div class="grid grid-cols-3 gap-4 border-t border-white/10 pt-4 font-data text-[10px] text-gray-500">
-                 <div>
-                   BATTERY A: 100%<br>
-                   BATTERY B: 100%
-                 </div>
-                 <div class="text-center">
-                   TEMP: 32°C<br>
-                   HUMIDITY: 45%
-                 </div>
-                 <div class="text-right text-gold-primary">
-                   AI CORE: IDLE
-                 </div>
-              </div>
-           </div>
+            </div>
+            
+            <!-- Notch -->
+            <div class="absolute top-2 left-1/2 -translate-x-1/2 w-24 h-6 bg-black rounded-full"></div>
+          </div>
+          
+          <!-- Floating Elements -->
+          <div class="absolute -right-8 top-20 bg-bunker-panel border border-tactical-green/30 p-3 backdrop-blur-md">
+            <div class="font-data text-xs text-tactical-green">SCORE</div>
+            <div class="font-luxury text-white text-xl">2,450</div>
+          </div>
+          <div class="absolute -left-8 bottom-32 bg-bunker-panel border border-white/20 p-3 backdrop-blur-md">
+            <div class="font-data text-xs text-gray-500">DIFFICULTY</div>
+            <div class="font-ui text-white text-sm">ADVANCED</div>
+          </div>
         </div>
       </div>
     </header>
 
-    <!-- The Gap (Why $25k) -->
-    <section id="philosophy" class="pt-20 pb-32 bg-bunker-dark border-y border-white/5 relative">
-      <div class="max-w-6xl mx-auto px-8 text-center">
-        <h2 class="font-luxury text-3xl text-white mb-4">THE VULNERABILITY OF WEALTH</h2>
-        <p class="font-ui text-gray-500 max-w-2xl mx-auto mb-16">In a major crisis, your net worth makes you a target, not a survivor. The rules change instantly.</p>
-        
-        <div class="grid md:grid-cols-3 gap-12 text-left">
-          <div class="bg-white/5 p-8 border border-white/10">
-            <h3 class="font-ui text-gold-primary text-xl font-bold mb-4">1. THE KNOWLEDGE GAP</h3>
-            <p class="font-ui text-gray-400 leading-relaxed text-sm">
-              You have experts for everything: doctors, lawyers, pilots. If communication fails, those experts disappear. You're left with no practical knowledge on how to treat a wound, purify water, or secure your property.
-            </p>
-          </div>
-           <div class="bg-white/5 p-8 border border-white/10">
-            <h3 class="font-ui text-gold-primary text-xl font-bold mb-4">2. THE GENERIC TRAP</h3>
-            <p class="font-ui text-gray-400 leading-relaxed text-sm">
-              Standard survival guides are written for the average person. They don't know your blood type. They don't know your security codes. They don't know your child needs insulin. Generic advice can be fatal for unique situations.
-            </p>
-          </div>
-           <div class="bg-white/5 p-8 border border-white/10">
-            <h3 class="font-ui text-gold-primary text-xl font-bold mb-4">3. THE PSYCHOLOGICAL SHOCK</h3>
-            <p class="font-ui text-gray-400 leading-relaxed text-sm">
-              The sudden shift from comfort to chaos causes decision paralysis. High-performers often freeze when the situation changes dramatically. Our AI learns your psychology to give you instructions you'll actually follow under extreme stress.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Bio-Integration -->
-    <section id="bio-integration" class="py-32 bg-void relative overflow-hidden">
-      <!-- Background Elements -->
-      <div class="absolute left-0 top-0 w-1/2 h-full bg-gradient-to-r from-white/5 to-transparent pointer-events-none"></div>
-      
+    <!-- Features Section -->
+    <section id="features" class="py-32 bg-bunker-dark border-y border-white/5 relative">
       <div class="max-w-[1800px] mx-auto px-8">
-        <div class="mb-20">
-          <span class="font-data text-gold-primary tracking-[0.3em] text-xs">PHASE 1 & 2</span>
-          <h2 class="font-luxury text-5xl md:text-6xl text-white mt-4">PERSONALIZATION</h2>
-          <p class="font-ui text-gray-400 mt-4 max-w-xl">We don't ship a generic product. We customize everything for you. Before you receive the device, we need to understand you completely.</p>
+        <div class="text-center mb-20">
+          <span class="font-data text-tactical-green tracking-[0.3em] text-xs">SIMULATION ENGINE</span>
+          <h2 class="font-luxury text-4xl md:text-5xl text-white mt-4">REAL-TIME SURVIVAL TRAINING</h2>
+          <p class="font-ui text-gray-400 mt-4 max-w-2xl mx-auto">Not a game. A training system. Scenarios unfold over hours or days, just like real emergencies.</p>
         </div>
 
-        <div class="grid lg:grid-cols-3 gap-8">
-          <!-- Card 1: DNA -->
-          <div class="bg-bunker-panel border border-white/10 p-10 relative group panel-hover">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Feature 1 -->
+          <div class="bg-bunker-panel border border-white/10 p-8 relative group panel-hover overflow-hidden">
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&q=80&w=600')] bg-cover bg-center opacity-10 group-hover:opacity-20 transition-opacity duration-500"></div>
             <div class="hud-corner hud-tl"></div><div class="hud-corner hud-tr"></div>
             <div class="hud-corner hud-bl"></div><div class="hud-corner hud-br"></div>
             
-            <div class="font-data text-4xl text-white/20 mb-6">01</div>
-            <h3 class="font-luxury text-2xl text-white mb-4">DNA & BLOOD ANALYSIS</h3>
-            <p class="font-ui text-gray-400 mb-8 min-h-[80px]">
-              We send you a DNA test kit and blood collection kit. Our lab analyzes which medications work best for you, your blood type, key health markers, and how your body processes nutrients.
+            <div class="text-tactical-green mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="font-luxury text-xl text-white mb-4 relative z-10">REAL-TIME SCENARIOS</h3>
+            <p class="font-ui text-gray-400 text-sm leading-relaxed relative z-10">
+              Drills run from 1 hour to 72 hours. Receive notifications throughout the day with new challenges. Experience the true pace of an emergency.
             </p>
-            <ul class="space-y-3 font-data text-xs text-gray-500">
-              <li class="flex items-center gap-2"><span class="text-gold-primary">>></span> BLOOD TYPE & HEALTH MARKERS</li>
-              <li class="flex items-center gap-2"><span class="text-gold-primary">>></span> MEDICATION COMPATIBILITY</li>
-              <li class="flex items-center gap-2"><span class="text-gold-primary">>></span> NUTRITIONAL NEEDS</li>
-            </ul>
           </div>
 
-          <!-- Card 2: Psych -->
-          <div class="bg-bunker-panel border border-white/10 p-10 relative group panel-hover">
+          <!-- Feature 2 -->
+          <div class="bg-bunker-panel border border-white/10 p-8 relative group panel-hover overflow-hidden">
+             <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=600')] bg-cover bg-center opacity-10 group-hover:opacity-20 transition-opacity duration-500"></div>
             <div class="hud-corner hud-tl"></div><div class="hud-corner hud-tr"></div>
             <div class="hud-corner hud-bl"></div><div class="hud-corner hud-br"></div>
 
-            <div class="font-data text-4xl text-white/20 mb-6">02</div>
-            <h3 class="font-luxury text-2xl text-white mb-4">STRESS PROFILING</h3>
-            <p class="font-ui text-gray-400 mb-8 min-h-[80px]">
-              You complete a remote session with our crisis psychologists. We learn how you react under extreme stress, so the AI can communicate with you effectively when it matters most.
+            <div class="text-tactical-green mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <h3 class="font-luxury text-xl text-white mb-4 relative z-10">FAMILY MODE</h3>
+            <p class="font-ui text-gray-400 text-sm leading-relaxed relative z-10">
+              Connect with family members. Assign roles. Coordinate responses. Train together so everyone knows what to do when it matters.
             </p>
-            <ul class="space-y-3 font-data text-xs text-gray-500">
-              <li class="flex items-center gap-2"><span class="text-gold-primary">>></span> AI COMMUNICATION STYLE TUNING</li>
-              <li class="flex items-center gap-2"><span class="text-gold-primary">>></span> PANIC PREVENTION SYSTEMS</li>
-              <li class="flex items-center gap-2"><span class="text-gold-primary">>></span> DECISION FATIGUE MANAGEMENT</li>
-            </ul>
           </div>
 
-          <!-- Card 3: Asset -->
-          <div class="bg-bunker-panel border border-white/10 p-10 relative group panel-hover">
+          <!-- Feature 3 -->
+          <div class="bg-bunker-panel border border-white/10 p-8 relative group panel-hover overflow-hidden">
+             <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=600')] bg-cover bg-center opacity-10 group-hover:opacity-20 transition-opacity duration-500"></div>
             <div class="hud-corner hud-tl"></div><div class="hud-corner hud-tr"></div>
             <div class="hud-corner hud-bl"></div><div class="hud-corner hud-br"></div>
 
-            <div class="font-data text-4xl text-white/20 mb-6">03</div>
-            <h3 class="font-luxury text-2xl text-white mb-4">PROPERTY MAPPING</h3>
-            <p class="font-ui text-gray-400 mb-8 min-h-[80px]">
-              Our team uploads your property layouts, supply lists, and vehicle manuals into the system's memory.
+            <div class="text-tactical-green mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+              </svg>
+            </div>
+            <h3 class="font-luxury text-xl text-white mb-4 relative z-10">DIFFICULTY LEVELS</h3>
+            <p class="font-ui text-gray-400 text-sm leading-relaxed relative z-10">
+              Start as RECRUIT with guided tutorials. Progress to OPERATOR, then SPECIALIST. Each level adds complexity and removes assistance.
             </p>
-            <ul class="space-y-3 font-data text-xs text-gray-500">
-              <li class="flex items-center gap-2"><span class="text-gold-primary">>></span> HOME & PROPERTY BLUEPRINTS</li>
-              <li class="flex items-center gap-2"><span class="text-gold-primary">>></span> SUPPLY INVENTORY TRACKING</li>
-              <li class="flex items-center gap-2"><span class="text-gold-primary">>></span> CUSTOM REPAIR GUIDES</li>
-            </ul>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="bg-bunker-panel border border-white/10 p-8 relative group panel-hover overflow-hidden">
+             <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1484600899469-230e8d1d59c0?auto=format&fit=crop&q=80&w=600')] bg-cover bg-center opacity-10 group-hover:opacity-20 transition-opacity duration-500"></div>
+            <div class="hud-corner hud-tl"></div><div class="hud-corner hud-tr"></div>
+            <div class="hud-corner hud-bl"></div><div class="hud-corner hud-br"></div>
+
+            <div class="text-tactical-green mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+              </svg>
+            </div>
+            <h3 class="font-luxury text-xl text-white mb-4 relative z-10">GLOBAL LEADERBOARD</h3>
+            <p class="font-ui text-gray-400 text-sm leading-relaxed relative z-10">
+              Compare your performance against others worldwide. Earn badges. Track your improvement over time. See how you rank.
+            </p>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="bg-bunker-panel border border-white/10 p-8 relative group panel-hover overflow-hidden">
+             <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=600')] bg-cover bg-center opacity-10 group-hover:opacity-20 transition-opacity duration-500"></div>
+            <div class="hud-corner hud-tl"></div><div class="hud-corner hud-tr"></div>
+            <div class="hud-corner hud-bl"></div><div class="hud-corner hud-br"></div>
+
+            <div class="text-tactical-green mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+            </div>
+            <h3 class="font-luxury text-xl text-white mb-4 relative z-10">AI GUIDANCE</h3>
+            <p class="font-ui text-gray-400 text-sm leading-relaxed relative z-10">
+              Stuck? Request hints from the AI without losing all your points. Learn as you go. The system adapts to teach, not just test.
+            </p>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="bg-bunker-panel border border-white/10 p-8 relative group panel-hover overflow-hidden">
+             <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&q=80&w=600')] bg-cover bg-center opacity-10 group-hover:opacity-20 transition-opacity duration-500"></div>
+            <div class="hud-corner hud-tl"></div><div class="hud-corner hud-tr"></div>
+            <div class="hud-corner hud-bl"></div><div class="hud-corner hud-br"></div>
+
+            <div class="text-tactical-green mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+            </div>
+            <h3 class="font-luxury text-xl text-white mb-4 relative z-10">SCENARIO LIBRARY</h3>
+            <p class="font-ui text-gray-400 text-sm leading-relaxed relative z-10">
+              847+ scenarios covering natural disasters, infrastructure failures, medical emergencies, and security threats. New scenarios added monthly.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Expanded Knowledge Grid (Bento) -->
-    <section id="intelligence" class="py-32 bg-bunker-dark border-t border-white/5">
-      <div class="max-w-[1800px] mx-auto px-8">
-        <div class="flex flex-col md:flex-row justify-between items-end mb-16">
-          <div>
-             <span class="font-data text-gray-500 tracking-[0.3em] text-xs">DATABASE SIZE: 48TB</span>
-             <h2 class="font-luxury text-4xl text-white mt-2">COMPLETE SURVIVAL LIBRARY</h2>
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-32 bg-void relative">
+      <div class="max-w-6xl mx-auto px-8">
+        <div class="text-center mb-20">
+          <span class="font-data text-tactical-green tracking-[0.3em] text-xs">PROTOCOL</span>
+          <h2 class="font-luxury text-4xl text-white mt-4">HOW IT WORKS</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Step 1 -->
+          <div class="text-center">
+            <div class="w-20 h-20 mx-auto mb-6 border-2 border-tactical-green/50 rounded-full flex items-center justify-center">
+              <span class="font-luxury text-3xl text-tactical-green">1</span>
+            </div>
+            <h3 class="font-luxury text-xl text-white mb-4">CHOOSE SCENARIO</h3>
+            <p class="font-ui text-gray-400 text-sm">Select from power outages, natural disasters, home invasions, medical emergencies, and more. Set your difficulty level.</p>
           </div>
-          <div class="font-data text-right text-xs text-gray-600 hidden md:block">
-            UPDATING INDEX...<br>
-            VERIFIED SOURCES ONLY
+
+          <!-- Step 2 -->
+          <div class="text-center">
+            <div class="w-20 h-20 mx-auto mb-6 border-2 border-tactical-green/50 rounded-full flex items-center justify-center">
+              <span class="font-luxury text-3xl text-tactical-green">2</span>
+            </div>
+            <h3 class="font-luxury text-xl text-white mb-4">RECEIVE ALERTS</h3>
+            <p class="font-ui text-gray-400 text-sm">The drill begins. You'll receive push notifications with situations to respond to. Some require immediate action; others give you hours.</p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="text-center">
+            <div class="w-20 h-20 mx-auto mb-6 border-2 border-tactical-green/50 rounded-full flex items-center justify-center">
+              <span class="font-luxury text-3xl text-tactical-green">3</span>
+            </div>
+            <h3 class="font-luxury text-xl text-white mb-4">COMPLETE & LEARN</h3>
+            <p class="font-ui text-gray-400 text-sm">After each scenario, review what you did well and where you could improve. Build muscle memory for real emergencies.</p>
           </div>
         </div>
 
-        <!-- Bento Grid Structure -->
-        <!-- 3 Rows High on Large Screens to accommodate 1 large item (left) and 3 levels of items (right) -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 lg:grid-rows-3 gap-6 h-auto lg:h-[900px]">
-          
-          <!-- Medical: Left Half (Full Height - 3 Rows) -->
-          <div class="md:col-span-2 lg:col-span-6 lg:row-span-3 bg-bunker-panel border border-white/10 relative overflow-hidden group flex flex-col min-h-[600px] lg:min-h-0">
-             <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800')] bg-cover bg-center opacity-10 group-hover:opacity-20 transition-opacity duration-700"></div>
-             <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
-             
-             <!-- Content -->
-             <div class="relative z-10 p-6 md:p-10 h-full flex flex-col justify-between">
-               <div class="flex justify-between items-start mb-8 md:mb-0">
-                 <h3 class="font-luxury text-2xl md:text-3xl text-white">ADVANCED MEDICAL</h3>
-                 <span class="text-gold-primary font-data text-2xl animate-pulse">✚</span>
-               </div>
-               
-                 <div class="mt-auto">
-                 <p class="text-gray-400 text-sm mb-8 leading-relaxed max-w-lg">
-                   Trained on 12,000 medical procedures. Guides you through emergency surgeries, dental care, and making medicine from natural materials around you.
-                 </p>
-                 <div class="grid grid-cols-2 gap-3 font-data text-[11px] text-gray-500 tracking-wide">
-                   <div class="bg-black/40 border border-white/5 p-3 hover:border-gold-primary/30 transition-colors">>> STEP-BY-STEP SURGERY GUIDE</div>
-                   <div class="bg-black/40 border border-white/5 p-3 hover:border-gold-primary/30 transition-colors">>> NATURAL MEDICINE CREATION</div>
-                   <div class="bg-black/40 border border-white/5 p-3 hover:border-gold-primary/30 transition-colors">>> BLOOD TYPE MATCHING</div>
-                   <div class="bg-black/40 border border-white/5 p-3 hover:border-gold-primary/30 transition-colors">>> MENTAL HEALTH SUPPORT</div>
-                   <div class="bg-black/40 border border-white/5 p-3 hover:border-gold-primary/30 transition-colors">>> CHRONIC CONDITION CARE</div>
-                   <div class="bg-black/40 border border-white/5 p-3 hover:border-gold-primary/30 transition-colors">>> HERBAL REMEDIES</div>
-                   <div class="bg-black/40 border border-white/5 p-3 hover:border-gold-primary/30 transition-colors">>> CHILDBIRTH ASSISTANCE</div>
-                   <div class="bg-black/40 border border-white/5 p-3 hover:border-gold-primary/30 transition-colors">>> HYGIENE & SANITATION</div>
-                 </div>
-               </div>
-             </div>
-          </div>
-
-          <!-- Defense: Top Right Quadrant (Row 1) -->
-          <div class="md:col-span-2 lg:col-span-6 lg:row-span-1 bg-bunker-panel border border-white/10 relative overflow-hidden group min-h-[300px] lg:min-h-0">
-             <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1595878715977-2e8f8df18ea8?auto=format&fit=crop&q=80&w=800&v=2')] bg-cover bg-center opacity-10 group-hover:opacity-20 transition-opacity duration-700"></div>
-             <div class="relative z-10 p-6 md:p-8 h-full flex flex-col justify-between">
-               <div class="flex justify-between items-start mb-4 md:mb-0">
-                 <h3 class="font-luxury text-xl md:text-2xl text-white">SECURITY & DEFENSE</h3>
-                 <span class="text-alert-red font-data text-xl">⌖</span>
-               </div>
-               <div class="flex flex-col md:flex-row gap-8 mt-4">
-                  <p class="text-gray-400 text-sm max-w-xs">Professional-grade security monitoring integration. Includes heat-sensing cameras around your property, drone flight planning, and defense systems.</p>
-                  <div class="flex-1 grid grid-cols-2 gap-2 font-data text-[10px] text-gray-500">
-                    <div class="border-l border-alert-red/30 pl-2">DRONE OPERATIONS</div>
-                    <div class="border-l border-alert-red/30 pl-2">HEAT MAPPING</div>
-                    <div class="border-l border-alert-red/30 pl-2">PERIMETER SECURITY</div>
-                    <div class="border-l border-alert-red/30 pl-2">FIREARMS GUIDANCE</div>
-                  </div>
-               </div>
-             </div>
-          </div>
-
-          <!-- The Quartet: Middle & Bottom Right -->
-          
-          <!-- Hydroponics (Row 2 Left) -->
-          <div class="md:col-span-1 lg:col-span-3 bg-bunker-panel border border-white/10 relative overflow-hidden group hover:border-white/20 transition-colors min-h-[250px] lg:min-h-0">
-             <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&q=80&w=600')] bg-cover bg-center opacity-5 group-hover:opacity-15 transition-opacity duration-500"></div>
-             <div class="relative z-10 p-6 h-full flex flex-col">
-               <div class="flex justify-between mb-4">
-                 <span class="font-luxury text-lg text-white">FOOD GROWING</span>
-                 <span class="font-data text-terminal-green text-xs">AUTO</span>
-               </div>
-               <p class="text-[11px] text-gray-500 font-data mb-3">Indoor farming optimization.</p>
-               <div class="mt-auto space-y-1 font-data text-[10px] text-gray-600">
-                 <div class="flex justify-between"><span>NUTRIENT GUIDES</span><span class="text-white">READY</span></div>
-                 <div class="flex justify-between"><span>SEED DATABASE</span><span class="text-white">INDEXED</span></div>
-               </div>
-             </div>
-          </div>
-
-          <!-- Engineering (Row 2 Right) -->
-          <div class="md:col-span-1 lg:col-span-3 bg-bunker-panel border border-white/10 relative overflow-hidden group hover:border-white/20 transition-colors min-h-[250px] lg:min-h-0">
-             <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=600&v=2')] bg-cover bg-center opacity-5 group-hover:opacity-15 transition-opacity duration-500"></div>
-             <div class="relative z-10 p-6 h-full flex flex-col">
-               <div class="flex justify-between mb-4">
-                 <span class="font-luxury text-lg text-white">ENGINEERING</span>
-                 <span class="font-data text-gold-primary text-xs">REPAIR</span>
-               </div>
-               <p class="text-[11px] text-gray-500 font-data mb-3">Power grid repair & building.</p>
-               <div class="mt-auto space-y-1 font-data text-[10px] text-gray-600">
-                 <div class="flex justify-between"><span>REPAIR GUIDES</span><span class="text-white">LOADED</span></div>
-                 <div class="flex justify-between"><span>3D PRINT FILES</span><span class="text-white">STL</span></div>
-               </div>
-             </div>
-          </div>
-
-          <!-- Chemistry (Row 3 Left) -->
-          <div class="md:col-span-1 lg:col-span-3 bg-bunker-panel border border-white/10 relative overflow-hidden group hover:border-white/20 transition-colors min-h-[250px] lg:min-h-0">
-             <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=600')] bg-cover bg-center opacity-5 group-hover:opacity-15 transition-opacity duration-500"></div>
-             <div class="relative z-10 p-6 h-full flex flex-col">
-               <div class="flex justify-between mb-4">
-                 <span class="font-luxury text-lg text-white">CHEMISTRY</span>
-                 <span class="font-data text-hologram-cyan text-xs">LAB</span>
-               </div>
-               <p class="text-[11px] text-gray-500 font-data mb-3">Fuel creation & water purification.</p>
-               <div class="mt-auto space-y-1 font-data text-[10px] text-gray-600">
-                 <div class="flex justify-between"><span>TESTING GUIDES</span><span class="text-white">ACTIVE</span></div>
-                 <div class="flex justify-between"><span>PURIFICATION</span><span class="text-white">99.9%</span></div>
-               </div>
-             </div>
-          </div>
-
-           <!-- Marine & Aviation (Row 3 Right) -->
-           <div class="md:col-span-1 lg:col-span-3 bg-bunker-panel border border-white/10 relative overflow-hidden group hover:border-white/20 transition-colors min-h-[250px] lg:min-h-0">
-            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?auto=format&fit=crop&q=80&w=600')] bg-cover bg-center opacity-5 group-hover:opacity-15 transition-opacity duration-500"></div>
-            <div class="relative z-10 p-6 h-full flex flex-col">
-              <div class="flex justify-between mb-4">
-                <span class="font-luxury text-lg text-white">BOATS & AIRCRAFT</span>
-                <span class="font-data text-marine-blue text-xs">NAVAL</span>
-              </div>
-              <p class="text-[11px] text-gray-500 font-data mb-3">Navigation & emergency escape.</p>
-              <div class="mt-auto space-y-1 font-data text-[10px] text-gray-600">
-                <div class="flex justify-between"><span>TIDE CHARTS</span><span class="text-white">GLOBAL</span></div>
-                <div class="flex justify-between"><span>ENGINE REPAIR</span><span class="text-white">DIESEL</span></div>
-              </div>
+        <!-- Example Timeline -->
+        <div class="mt-20 bg-bunker-panel border border-white/10 p-8 md:p-12">
+          <div class="font-data text-tactical-green text-xs mb-4">EXAMPLE: 48-HOUR WINTER BLACKOUT DRILL</div>
+          <div class="space-y-4 font-data text-sm">
+            <div class="flex gap-4 items-start">
+              <span class="text-gray-600 w-20 flex-shrink-0">HOUR 0</span>
+              <span class="text-white">"Power has failed. Temperature is dropping. Locate all family members."</span>
             </div>
-         </div>
-          
+            <div class="flex gap-4 items-start">
+              <span class="text-gray-600 w-20 flex-shrink-0">HOUR 2</span>
+              <span class="text-white">"Indoor temperature now 15°C. Identify warmest room in your home."</span>
+            </div>
+            <div class="flex gap-4 items-start">
+              <span class="text-gray-600 w-20 flex-shrink-0">HOUR 6</span>
+              <span class="text-white">"Night is falling. Set up emergency lighting. Inventory food supplies."</span>
+            </div>
+            <div class="flex gap-4 items-start">
+              <span class="text-gray-600 w-20 flex-shrink-0">HOUR 12</span>
+              <span class="text-white">"Pipes may freeze. Do you know how to prevent this?"</span>
+            </div>
+            <div class="flex gap-4 items-start">
+              <span class="text-gray-600 w-20 flex-shrink-0">HOUR 24</span>
+              <span class="text-white">"Food in refrigerator is spoiling. Create consumption priority list."</span>
+            </div>
+            <div class="flex gap-4 items-start">
+              <span class="text-gray-600 w-20 flex-shrink-0">HOUR 48</span>
+              <span class="text-tactical-green">"DRILL COMPLETE. Your family survived. Score: 2,450 points."</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Operational Protocols (Command Mode) -->
-    <section class="py-32 bg-bunker-dark border-t border-white/5 relative overflow-hidden">
-        <!-- Background glow -->
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] bg-gold-primary/5 blur-[100px] pointer-events-none"></div>
-
-        <div class="max-w-6xl mx-auto px-8 relative z-10">
-            <div class="text-center mb-16">
-                <span class="font-data text-gold-primary tracking-[0.3em] text-xs">HOW THE AI WORKS</span>
-                <h2 class="font-luxury text-4xl text-white mt-4">ACTIVE CRISIS MANAGEMENT</h2>
-                <p class="font-ui text-gray-400 mt-4 max-w-xl mx-auto">The AI doesn't just answer questions. It actively tracks your situation—monitoring your supplies, power status, and changing conditions—and tells you exactly what to do next.</p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-6">
-                <!-- Protocol 1: Drills -->
-                <div class="bg-black border border-white/10 p-6 font-data text-xs relative group hover:border-gold-primary/30 transition-colors">
-                    <div class="text-gray-500 mb-2">PRACTICE DRILL</div>
-                    <div class="text-gold-primary mb-4">> START: WINTER EMERGENCY</div>
-                    <div class="text-gray-300 leading-relaxed">
-                        "Scenario: Power out, Temperature -15°C.<br>
-                        Goal: Prevent hypothermia.<br>
-                        Action: Gather family in warmest room.<br>
-                        <span class="animate-pulse">_Timer: 10:00 mins</span>"
-                    </div>
-                </div>
-
-                <!-- Protocol 2: Decision Tree -->
-                <div class="bg-black border border-white/10 p-6 font-data text-xs relative group hover:border-gold-primary/30 transition-colors">
-                    <div class="text-gray-500 mb-2">MEDICAL EMERGENCY</div>
-                    <div class="text-alert-red mb-4">> ALERT: PERSON UNCONSCIOUS</div>
-                    <div class="text-gray-300 leading-relaxed">
-                        "Pulse: Weak. Eyes: Not responding.<br>
-                        Diagnosis: SHOCK.<br>
-                        IMMEDIATE ACTION: Use EpiPen (Kit A).<br>
-                        Position: Recovery position."
-                    </div>
-                </div>
-
-                <!-- Protocol 3: Rationing -->
-                <div class="bg-black border border-white/10 p-6 font-data text-xs relative group hover:border-gold-primary/30 transition-colors">
-                    <div class="text-gray-500 mb-2">RESOURCE CALCULATOR</div>
-                    <div class="text-hologram-cyan mb-4">> CHECK: WATER SUPPLY</div>
-                    <div class="text-gray-300 leading-relaxed">
-                        "Detected: 4 People.<br>
-                        Water Stock: 40 Liters.<br>
-                        Outside Supply: UNAVAILABLE.<br>
-                        RECOMMENDATION: Start rationing (2.5L per person daily)."
-                    </div>
-                </div>
-            </div>
+    <!-- Pricing -->
+    <section id="pricing" class="py-32 bg-bunker-dark border-t border-white/5">
+      <div class="max-w-6xl mx-auto px-8">
+        <div class="text-center mb-16">
+          <span class="font-data text-tactical-green tracking-[0.3em] text-xs">PRICING</span>
+          <h2 class="font-luxury text-4xl text-white mt-4">PLANNED TIERS</h2>
+          <p class="font-ui text-gray-500 mt-4">Final pricing will be announced at launch</p>
         </div>
-    </section>
 
-    <!-- The Device (Hardware) -->
-    <section class="py-32 bg-void relative border-t border-white/5">
-        <div class="max-w-6xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
-           <div>
-              <div class="w-full aspect-[4/3] bg-bunker-panel border border-white/10 relative flex items-center justify-center">
-                  <!-- Abstract representation of the device -->
-                  <div class="w-[80%] h-[70%] bg-[#1a1a1a] border border-gray-800 rounded relative shadow-2xl">
-                      <!-- Screen -->
-                      <div class="absolute top-4 left-4 right-4 bottom-16 bg-black border border-gray-800 flex items-center justify-center overflow-hidden">
-                          <div class="font-data text-green-500 text-xs p-4 w-full h-full font-mono leading-none opacity-80">
-                             > SYSTEM STARTING...<br>
-                             > CHECKING SENSORS...<br>
-                             > USER RECOGNIZED.<br>
-                             > WELCOME, COMMANDER.<br>
-                             > _
-                          </div>
-                      </div>
-                      <!-- Buttons -->
-                      <div class="absolute bottom-4 left-4 right-4 flex justify-between">
-                          <div class="flex gap-2">
-                              <div class="w-8 h-8 bg-[#222] rounded-sm border border-white/5"></div>
-                              <div class="w-8 h-8 bg-[#222] rounded-sm border border-white/5"></div>
-                          </div>
-                          <div class="w-20 h-8 bg-black border border-gold-primary/50 flex items-center justify-center text-[8px] text-gold-primary font-data tracking-widest">
-                              OFFLINE
-                          </div>
-                      </div>
-                  </div>
-                  
-                  <!-- Specs Overlay -->
-                  <div class="absolute -right-12 top-10 bg-black/80 border border-white/20 p-4 backdrop-blur-md">
-                      <div class="font-data text-xs text-gold-primary mb-1">CPU</div>
-                      <div class="font-ui text-white text-sm">8-CORE AI OPTIMIZED</div>
-                  </div>
-                  <div class="absolute -left-12 bottom-20 bg-black/80 border border-white/20 p-4 backdrop-blur-md">
-                      <div class="font-data text-xs text-gold-primary mb-1">BATTERY</div>
-                      <div class="font-ui text-white text-sm">DUAL SWAPPABLE (30HR)</div>
-                  </div>
-              </div>
-           </div>
-           <div>
-              <h2 class="font-luxury text-4xl text-white mb-6">HARDWARE: THE VAULT</h2>
-              <p class="font-ui text-gray-400 mb-8">
-                  The software runs on a ruggedized Panasonic Toughbook, enclosed in a signal-blocking protective case (Faraday cage). It's waterproof, dustproof, and drop-tested to military standards.
-              </p>
-              <div class="space-y-6">
-                  <div class="flex items-start gap-4">
-                      <div class="w-12 h-12 bg-white/5 flex items-center justify-center border border-white/10 font-luxury text-gold-primary">01</div>
-                      <div>
-                          <h4 class="text-white font-bold font-ui">COMPLETELY OFFLINE</h4>
-                          <p class="text-xs text-gray-500 mt-1 font-data">Hardware switch disconnects all wireless signals. No emissions. No tracking. Completely disconnected from the internet.</p>
-                      </div>
-                  </div>
-                  <div class="flex items-start gap-4">
-                      <div class="w-12 h-12 bg-white/5 flex items-center justify-center border border-white/10 font-luxury text-gold-primary">02</div>
-                      <div>
-                          <h4 class="text-white font-bold font-ui">SOLAR POWERED</h4>
-                          <p class="text-xs text-gray-500 mt-1 font-data">Includes military-grade foldable solar panel for unlimited runtime off the grid.</p>
-                      </div>
-                  </div>
-              </div>
-           </div>
-        </div>
-    </section>
-
-    <!-- Protocol / Application -->
-    <section id="protocol" class="py-32 bg-bunker-dark border-t border-white/5">
-        <div class="max-w-4xl mx-auto px-8 text-center">
-            <h2 class="font-luxury text-4xl text-white mb-4">GET STARTED</h2>
-            <p class="font-ui text-gray-400 mb-12">
-                Due to the intensive personalization process, we produce only 50 units per quarter.
-            </p>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Basic -->
+          <div class="bg-bunker-panel border border-white/10 p-8 relative group panel-hover">
+            <div class="hud-corner hud-tl"></div><div class="hud-corner hud-tr"></div>
+            <div class="hud-corner hud-bl"></div><div class="hud-corner hud-br"></div>
             
-            <div id="application" class="bg-bunker-panel border border-gold-primary/30 p-8 md:p-16 relative">
-                <div class="absolute top-0 left-0 w-full h-1 bg-gold-primary"></div>
-                
-                <div class="flex flex-col md:flex-row justify-between items-center mb-12 border-b border-white/5 pb-8">
-                    <div class="text-left">
-                        <div class="font-luxury text-3xl text-white">THE SOVEREIGN</div>
-                        <div class="font-data text-xs text-gold-primary mt-2">COMPLETE SYSTEM</div>
-                    </div>
-                    <div class="text-right mt-4 md:mt-0">
-                        <div class="font-luxury text-4xl text-white">CONFIGURATION</div>
-                        <div class="font-data text-xs text-gray-500 mt-1">SELECT TIER</div>
-                    </div>
-                </div>
+            <div class="font-luxury text-xl text-white mb-2">RECRUIT</div>
+            <div class="font-data text-tactical-green text-2xl mb-6">FREE</div>
+            <ul class="space-y-3 font-data text-xs text-gray-400 mb-8">
+              <li class="flex items-center gap-2"><span class="text-tactical-green">✓</span> 5 basic scenarios</li>
+              <li class="flex items-center gap-2"><span class="text-tactical-green">✓</span> Solo mode only</li>
+              <li class="flex items-center gap-2"><span class="text-tactical-green">✓</span> Limited AI guidance</li>
+            </ul>
+            <div class="text-center font-data text-xs text-gray-600">COMING SOON</div>
+          </div>
 
-                <form class="space-y-6 text-left">
-                    <input type="hidden" name="product" value="SOVEREIGN OS">
-                    <input type="hidden" name="form_type" value="application">
-                    <!-- Package Selection -->
-                    <div class="grid md:grid-cols-2 gap-4 mb-8">
-                        <label class="relative border border-gold-primary/30 bg-black/40 p-6 cursor-pointer hover:border-gold-primary transition-colors group">
-                            <input type="radio" name="package" value="standard" checked class="absolute top-4 right-4 accent-gold-primary">
-                            <div class="font-luxury text-xl text-white mb-2">STANDARD</div>
-                            <div class="font-data text-gold-primary text-lg mb-4">$25,000</div>
-                            <ul class="text-[10px] text-gray-400 font-data space-y-1">
-                                <li>>> RUGGEDIZED LAPTOP</li>
-                                <li>>> FULL PERSONALIZATION</li>
-                                <li>>> 48TB OFFLINE DATABASE</li>
-                            </ul>
-                        </label>
-                        <label class="relative border border-gold-primary/30 bg-black/40 p-6 cursor-pointer hover:border-gold-primary transition-colors group">
-                            <input type="radio" name="package" value="overwatch" class="absolute top-4 right-4 accent-gold-primary">
-                            <div class="font-luxury text-xl text-white mb-2">OVERWATCH</div>
-                            <div class="font-data text-gold-primary text-lg mb-4">$45,000</div>
-                            <ul class="text-[10px] text-gray-400 font-data space-y-1">
-                                <li>>> EVERYTHING IN STANDARD</li>
-                                <li>>> HEAT-SENSING DRONE</li>
-                                <li>>> PROPERTY SCANNING SYSTEM</li>
-                            </ul>
-                        </label>
-                    </div>
+          <!-- Pro -->
+          <div class="bg-bunker-panel border border-tactical-green/50 p-8 relative group panel-hover">
+            <div class="hud-corner hud-tl"></div><div class="hud-corner hud-tr"></div>
+            <div class="hud-corner hud-bl"></div><div class="hud-corner hud-br"></div>
+            
+            <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-tactical-green text-black px-4 py-1 font-data text-xs">POPULAR</div>
+            <div class="font-luxury text-xl text-white mb-2">OPERATOR</div>
+            <div class="font-data text-tactical-green text-2xl mb-6">~$99/YEAR</div>
+            <ul class="space-y-3 font-data text-xs text-gray-400 mb-8">
+              <li class="flex items-center gap-2"><span class="text-tactical-green">✓</span> All 847+ scenarios</li>
+              <li class="flex items-center gap-2"><span class="text-tactical-green">✓</span> Family mode (up to 4)</li>
+              <li class="flex items-center gap-2"><span class="text-tactical-green">✓</span> Full AI guidance</li>
+              <li class="flex items-center gap-2"><span class="text-tactical-green">✓</span> Global leaderboard</li>
+            </ul>
+            <div class="text-center font-data text-xs text-gray-600">COMING SOON</div>
+          </div>
 
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <label class="font-data text-[10px] text-gold-primary tracking-widest mb-2 block">NAME</label>
-                            <input type="text" name="name" required class="w-full bg-black border border-white/20 p-4 text-white font-ui focus:border-gold-primary outline-none transition-colors">
-                        </div>
-                        <div>
-                            <label class="font-data text-[10px] text-gold-primary tracking-widest mb-2 block">OFFICIAL EMAIL</label>
-                            <input type="email" name="email" required class="w-full bg-black border border-white/20 p-4 text-white font-ui focus:border-gold-primary outline-none transition-colors">
-                        </div>
-                    </div>
-                    <div>
-                        <label class="font-data text-[10px] text-gold-primary tracking-widest mb-2 block">COUNTRY OF RESIDENCE (FOR SHIPPING)</label>
-                        <input type="text" name="country" class="w-full bg-black border border-white/20 p-4 text-white font-ui focus:border-gold-primary outline-none transition-colors">
-                    </div>
-
-                    <!-- Updates Subscription -->
-                    <div class="border border-white/10 bg-white/5 p-4">
-                        <div class="flex items-start gap-3">
-                            <input type="checkbox" name="subscription" value="yes" class="mt-1 bg-black border-white/20 accent-gold-primary">
-                            <div>
-                                <span class="font-data text-xs text-white block mb-1">ADD-ON: QUARTERLY UPDATES ($500/MO)</span>
-                                <p class="text-[10px] text-gray-500 font-data">Billed annually. Receive encrypted drives delivered to you containing updated medical guides, threat reports, and software updates. Works completely offline.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start gap-3 mt-4">
-                        <input type="checkbox" name="deposit_acknowledged" required class="mt-1 bg-black border-white/20 accent-gold-primary">
-                        <span class="text-xs text-gray-500 font-data">I UNDERSTAND A $2,500 NON-REFUNDABLE DEPOSIT IS REQUIRED TO START THE DNA ANALYSIS PROCESS.</span>
-                    </div>
-                    
-                    <button type="submit" id="submit-btn" class="w-full bg-gold-primary hover:bg-white text-black font-bold py-6 font-data tracking-widest transition-colors mt-8">
-                        REQUEST INVITATION
-                    </button>
-                </form>
-                
-                <div id="success-message" class="hidden mt-8 p-6 border border-gold-primary/30 bg-gold-primary/5 text-center">
-                    <div class="font-luxury text-xl text-white mb-2">MESSAGE RECEIVED</div>
-                    <div class="font-data text-xs text-gold-primary">
-                        WE WILL CONTACT YOU SHORTLY.
-                    </div>
-                </div>
-
-                <div class="mt-8 flex justify-center gap-8 opacity-50">
-                    <div class="h-8 w-12 border border-white/20 flex items-center justify-center text-[10px] text-gray-400">VISA</div>
-                    <div class="h-8 w-12 border border-white/20 flex items-center justify-center text-[10px] text-gray-400">BTC</div>
-                    <div class="h-8 w-12 border border-white/20 flex items-center justify-center text-[10px] text-gray-400">WIRE</div>
-                </div>
-            </div>
+          <!-- Family -->
+          <div class="bg-bunker-panel border border-white/10 p-8 relative group panel-hover">
+            <div class="hud-corner hud-tl"></div><div class="hud-corner hud-tr"></div>
+            <div class="hud-corner hud-bl"></div><div class="hud-corner hud-br"></div>
+            
+            <div class="font-luxury text-xl text-white mb-2">SPECIALIST</div>
+            <div class="font-data text-tactical-green text-2xl mb-6">~$199/YEAR</div>
+            <ul class="space-y-3 font-data text-xs text-gray-400 mb-8">
+              <li class="flex items-center gap-2"><span class="text-tactical-green">✓</span> Everything in Operator</li>
+              <li class="flex items-center gap-2"><span class="text-tactical-green">✓</span> Family mode (unlimited)</li>
+              <li class="flex items-center gap-2"><span class="text-tactical-green">✓</span> Custom scenarios</li>
+              <li class="flex items-center gap-2"><span class="text-tactical-green">✓</span> Priority new features</li>
+            </ul>
+            <div class="text-center font-data text-xs text-gray-600">COMING SOON</div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Waitlist Form -->
+    <section id="waitlist" class="py-32 bg-void border-t border-white/5">
+      <div class="max-w-2xl mx-auto px-8">
+        <div class="text-center mb-12">
+          <span class="font-data text-tactical-green tracking-[0.3em] text-xs">EARLY ACCESS</span>
+          <h2 class="font-luxury text-4xl text-white mt-4">JOIN THE WAITLIST</h2>
+          <p class="font-ui text-gray-400 mt-4">Be the first to know when DRILL PROTOCOL launches. Early supporters get lifetime discounts.</p>
+        </div>
+
+        <div class="bg-bunker-panel border border-tactical-green/30 p-8 md:p-12 relative">
+          <div class="absolute top-0 left-0 w-full h-1 bg-tactical-green"></div>
+          
+          <form id="waitlist-form" action="https://formspree.io/f/xanzazbd" method="POST" class="space-y-6">
+            <input type="hidden" name="product" value="DRILL PROTOCOL">
+            <input type="hidden" name="form_type" value="waitlist">
+            
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="font-data text-[10px] text-tactical-green tracking-widest mb-2 block">NAME</label>
+                <input type="text" name="name" required class="w-full bg-black border border-white/20 p-4 text-white font-ui focus:border-tactical-green outline-none transition-colors">
+              </div>
+              <div>
+                <label class="font-data text-[10px] text-tactical-green tracking-widest mb-2 block">EMAIL</label>
+                <input type="email" name="email" required class="w-full bg-black border border-white/20 p-4 text-white font-ui focus:border-tactical-green outline-none transition-colors">
+              </div>
+            </div>
+
+            <div>
+              <label class="font-data text-[10px] text-tactical-green tracking-widest mb-2 block">INTEREST LEVEL</label>
+              <select name="interest_level" class="w-full bg-black border border-white/20 p-4 text-white font-ui focus:border-tactical-green outline-none transition-colors">
+                <option value="curious">Just curious about the concept</option>
+                <option value="will_buy">Will likely buy at launch</option>
+                <option value="beta_tester">Want to be a beta tester</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="font-data text-[10px] text-tactical-green tracking-widest mb-2 block">PLATFORM PREFERENCE</label>
+              <select name="platform" class="w-full bg-black border border-white/20 p-4 text-white font-ui focus:border-tactical-green outline-none transition-colors">
+                <option value="ios">iOS (iPhone/iPad)</option>
+                <option value="android">Android</option>
+                <option value="both">Both platforms</option>
+              </select>
+            </div>
+            
+            <button type="submit" id="submit-btn" class="w-full bg-tactical-green hover:bg-white text-black font-bold py-5 font-data tracking-widest transition-colors">
+              JOIN WAITLIST
+            </button>
+          </form>
+          
+          <div id="success-message" class="hidden mt-8 p-6 border border-tactical-green/30 bg-tactical-green/5 text-center">
+            <div class="font-luxury text-xl text-white mb-2">YOU'RE ON THE LIST</div>
+            <div class="font-data text-xs text-tactical-green">
+              WE'LL NOTIFY YOU WHEN DRILL PROTOCOL LAUNCHES.
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer class="bg-void border-t border-white/10 py-12">
-      <div class="max-w-[1800px] mx-auto px-8 grid md:grid-cols-4 gap-8">
+      <div class="max-w-[1800px] mx-auto px-8 grid md:grid-cols-3 gap-8">
         <div class="col-span-2">
-          <span class="font-luxury font-bold text-white text-2xl">SVGN<span class="text-gold-primary">SYSTEMS</span></span>
+          <span class="font-luxury font-bold text-white text-2xl">SVGN<span class="text-tactical-green">SYSTEMS</span></span>
           <p class="font-data text-xs text-gray-500 mt-4 max-w-md leading-relaxed">
-             SVGN Systems is a privately held company. We provide security and personalized survival intelligence for high-net-worth clients. We maintain strict client confidentiality.
+             SVGN Systems develops real-time survival training technology. DRILL PROTOCOL is our AI-powered simulation platform for emergency preparedness.
           </p>
         </div>
         <div>
-           <h4 class="font-data text-gold-primary text-xs tracking-widest mb-4">LEGAL</h4>
+           <h4 class="font-data text-tactical-green text-xs tracking-widest mb-4">LEGAL</h4>
            <ul class="space-y-2 font-data text-xs text-gray-500">
              <li><a href="/legal/privacy.html" class="hover:text-white">PRIVACY POLICY</a></li>
              <li><a href="/legal/terms.html" class="hover:text-white">TERMS OF SERVICE</a></li>
-             <li><a href="/legal/disclaimer.html" class="hover:text-white">MEDICAL DISCLAIMER</a></li>
-           </ul>
-        </div>
-        <div>
-           <h4 class="font-data text-gold-primary text-xs tracking-widest mb-4">ACCESS</h4>
-           <ul class="space-y-2 font-data text-xs text-gray-500">
-             <li>INVITATION ONLY</li>
-             <li><a href="mailto:base@svgnsystems.com" class="hover:text-white">base@svgnsystems.com</a></li>
+             <li class="pt-2"><a href="mailto:base@svgnsystems.com" class="hover:text-white">base@svgnsystems.com</a></li>
            </ul>
         </div>
       </div>
       <div class="max-w-[1800px] mx-auto px-8 mt-12 pt-8 border-t border-white/5 flex justify-between font-data text-[10px] text-gray-600">
-         <div>© 2025 SVGN SYSTEMS. ALL RIGHTS RESERVED.</div>
-         <div>SYSTEM VERSION: 4.2.0</div>
+         <div>&copy; 2025 SVGN SYSTEMS. ALL RIGHTS RESERVED.</div>
+         <div>DRILL PROTOCOL v0.1.0-ALPHA</div>
       </div>
     </footer>
     
     <script>
-        document.querySelector('form').addEventListener('submit', function(e) {
+        document.getElementById('waitlist-form').addEventListener('submit', function(e) {
             e.preventDefault();
             const btn = document.getElementById('submit-btn');
             const msg = document.getElementById('success-message');
             const form = this;
             const originalBtnText = btn.innerHTML;
             
-            // Visual feedback
             btn.innerHTML = "SENDING...";
             btn.classList.add('opacity-50', 'cursor-not-allowed');
             
@@ -880,13 +683,11 @@
                 }
             }).then(response => {
                 if (response.ok) {
-                    // Success animation
                     setTimeout(() => {
                         form.classList.add('hidden');
                         msg.classList.remove('hidden');
                     }, 1000);
                 } else {
-                    // Error handling
                     response.json().then(data => {
                         if (Object.hasOwn(data, 'errors')) {
                             alert(data["errors"].map(error => error["message"]).join(", "));
